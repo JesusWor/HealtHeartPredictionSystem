@@ -172,15 +172,15 @@ Circulation [Online]. 101 (23), pp. e215–e220.
 
 ## Authors
 
-- **[Your Name]** - Development
-- **[Co-author Name]** - Development
+- **Jesus Eduardo Escobar Meza** - Development
+- **Cristian Ricardo Luque Arambula** - Development
 
 ---
 
-## License
+<!-- ## License
 
 [To be defined]
 
----
+--- -->
 
 **Version:** 0.1.0 (Alpha)
