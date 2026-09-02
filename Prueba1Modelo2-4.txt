@@ -1,0 +1,165 @@
+def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--data_root", type=str, default=".")
+    parser.add_argument("--bidmc_path", type=str, default="bidmc-ppg-and-respiration-dataset-1.0.0")
+    parser.add_argument("--epochs", type=int, default=80)
+    parser.add_argument("--batch_size", type=int, default=16)          # antes 8
+    parser.add_argument("--T", type=int, default=500)
+    parser.add_argument("--stride", type=int, default=250)             # NUEVO: solapamiento 50%
+    parser.add_argument("--hidden_dim", type=int, default=64)          # antes 128
+    parser.add_argument("--n_layers", type=int, default=1)             # antes 2
+    parser.add_argument("--dropout", type=float, default=0.15)         # NUEVO, antes hardcodeado 0.05
+    parser.add_argument("--lr", type=float, default=1e-3)              # antes 3e-3
+    parser.add_argument("--patience", type=int, default=15)
+    parser.add_argument("--output_dir", type=str, default="checkpointsModelo2_v2")  # NUEVO dir, ver nota abajo
+    parser.add_argument("--seed", type=int, default=42)
+    args, _ = parser.parse_known_args()
+
+    set_seed(args.seed)
+    os.makedirs(args.output_dir, exist_ok=True)
+    device = "cuda" if torch.cuda.is_available() else "cpu"
+    print(f"Usando device: {device}")
+
+    if args.bidmc_path:
+        print("Usando PPG REAL (BIDMC), 1 lead")
+        train_ds = BIDMCDataset(args.bidmc_path, split="train", T=args.T, stride=args.stride, seed=args.seed)
+        val_ds = BIDMCDataset(args.bidmc_path, split="val", T=args.T, stride=args.stride, seed=args.seed)
+        test_ds = BIDMCDataset(args.bidmc_path, split="test", T=args.T, stride=args.stride, seed=args.seed)
+    else:
+        print("Usando pseudo-PPG (MIT-BIH / PTB). Para PPG real usa --bidmc_path")
+        train_ds = RealECGDataset(args.data_root, split="train", T=args.T, use_augmentation=True, seed=args.seed)
+        val_ds = RealECGDataset(args.data_root, split="val", T=args.T, use_augmentation=False, seed=args.seed)
+        test_ds = RealECGDataset(args.data_root, split="test", T=args.T, use_augmentation=False, seed=args.seed)
+
+    import platform
+    n_workers = 0 if platform.system() == "Windows" else 2
+    train_loader = DataLoader(train_ds, batch_size=args.batch_size, shuffle=True, num_workers=n_workers, pin_memory=(n_workers > 0))
+    val_loader = DataLoader(val_ds, batch_size=args.batch_size, shuffle=False, num_workers=n_workers, pin_memory=(n_workers > 0))
+    test_loader = DataLoader(test_ds, batch_size=args.batch_size, shuffle=False, num_workers=n_workers, pin_memory=(n_workers > 0))
+
+    graph = build_default_heart_graph(device=device)
+    model = BioMEMOximetryToECG(
+        graph=graph, input_dim=5, hidden_dim=args.hidden_dim,
+        node_emb_dim=32, msg_dim=128, n_leads=1,               # antes 12
+        n_layers=args.n_layers, dropout=args.dropout,
+    ).to(device)
+    print(f"Parámetros: {sum(p.numel() for p in model.parameters()):,}")
+
+    optimizer = torch.optim.AdamW(model.parameters(), lr=args.lr, weight_decay=1e-5)
+    scheduler = torch.optim.lr_scheduler.OneCycleLR(
+        optimizer, max_lr=args.lr,
+        steps_per_epoch=len(train_loader),
+        epochs=args.epochs,
+        pct_start=0.25,                                        # antes 0.1
+        anneal_strategy="cos",
+    )
+
+    scaler = torch.cuda.amp.GradScaler() if device == "cuda" else None
+    criterion = ImprovedLoss(mse_w=1.0, pearson_w=0.3, smooth_w=0.05, phys_w=0.05, source_w=0.01)
+
+    checkpoint_path = os.path.join(args.output_dir, "best_model.pt")
+    start_epoch = 1
+    best_val_loss = float("inf")
+    patience_counter = 0
+    history = []
+
+    if os.path.exists(checkpoint_path):
+        ckpt = torch.load(checkpoint_path, map_location=device)
+        model.load_state_dict(ckpt["model_state"])
+        optimizer.load_state_dict(ckpt["optim_state"])
+        start_epoch = ckpt["epoch"] + 1
+        best_val_loss = ckpt["val_loss"]
+        history_path = os.path.join(args.output_dir, "history.json")
+        if os.path.exists(history_path):
+            with open(history_path) as f:
+                history = json.load(f)
+        steps_done = (start_epoch - 1) * len(train_loader)
+        for _ in range(steps_done):
+            scheduler.step()
+        print(f"Retomando desde epoch {start_epoch} | mejor val_loss hasta ahora: {best_val_loss:.4f}")
+    else:
+        print("No se encontró checkpoint — entrenamiento desde cero")
+
+    for epoch in range(start_epoch, args.epochs + 1):
+        tr = train_one_epoch(model, train_loader, optimizer, scheduler, criterion, device, scaler)
+        va = evaluate(model, val_loader, criterion, device)
+
+        history.append(to_native({"epoch": epoch, "train": tr, "val": va}))
+        with open(os.path.join(args.output_dir, "history.json"), "w") as f:
+            json.dump(history, f, indent=2)
+
+        print(
+            f"Epoch {epoch:03d} | "
+            f"Train Loss={tr['loss']:.4f} MSE={tr['mse']:.4f} Pearson={tr['pearson']:.4f} | "
+            f"Val Loss={va['loss']:.4f} RMSE={va.get('rmse_mean', 0):.4f} "
+            f"Corr={va.get('corr_mean', 0):.4f} PRD={va.get('prd_mean', 0):.2f}% "
+            f"| Patho F1={va['pathology_metrics']['macro_f1']:.3f}"
+        )
+
+        if va["loss"] < best_val_loss:
+            best_val_loss = va["loss"]
+            patience_counter = 0
+            torch.save({
+                "epoch": epoch,
+                "model_state": model.state_dict(),
+                "optim_state": optimizer.state_dict(),
+                "val_loss": va["loss"],
+                "val_corr": va.get("corr_mean", 0),
+                "args": vars(args),
+            }, os.path.join(args.output_dir, "best_model.pt"))
+            print(f"  ✓ Guardado nuevo mejor modelo (val_loss={best_val_loss:.4f})")
+        else:
+            patience_counter += 1
+            if patience_counter >= args.patience:
+                print(f"\nEarly stopping en epoch {epoch} (sin mejora por {args.patience} épocas)")
+                break
+
+    print("\n── Evaluación en test set ──")
+    ckpt = torch.load(os.path.join(args.output_dir, "best_model.pt"), map_location=device)
+    model.load_state_dict(ckpt["model_state"])
+    test_metrics = evaluate(model, test_loader, criterion, device)
+    print(f"Test RMSE: {test_metrics['rmse_mean']:.4f}")
+    print(f"Test Corr: {test_metrics['corr_mean']:.4f}")
+    print(f"Test PRD: {test_metrics['prd_mean']:.2f}%")
+    print(f"PRD lead II: {test_metrics['prd_per_lead'][0]:.2f}%")   # antes: loop sobre 12 nombres
+
+    patho_metrics = test_metrics["pathology_metrics"]
+    print("\n=== Clasificación de patologías (test) ===")
+    print_pathology_report(patho_metrics)
+
+    PATHO_LOG_PATH = os.path.join(args.output_dir, "pathology_test_runs.json")
+    previous_runs = []
+    if os.path.exists(PATHO_LOG_PATH):
+        with open(PATHO_LOG_PATH) as f:
+            previous_runs = json.load(f)
+
+    current_run = {
+        "timestamp": datetime.datetime.now().isoformat(timespec="seconds"),
+        "epoch": ckpt["epoch"],
+        "macro_f1": patho_metrics["macro_f1"],
+        "per_class_f1": {name: patho_metrics["per_class"][name]["f1"] for name in PATHOLOGY_NAMES},
+    }
+
+    print("\n" + "=" * 60)
+    if previous_runs:
+        last_run = previous_runs[-1]
+        print("COMPARACIÓN PATOLOGÍAS CON LA CORRIDA ANTERIOR")
+        print("=" * 60)
+        d_f1 = current_run["macro_f1"] - last_run["macro_f1"]
+        print(f"{'F1 macro':<15}{last_run['macro_f1']:>12.4f}{current_run['macro_f1']:>12.4f}{d_f1:>+12.4f}")
+        for name in PATHOLOGY_NAMES:
+            prev = last_run["per_class_f1"].get(name, 0.0)
+            curr = current_run["per_class_f1"].get(name, 0.0)
+            print(f"  F1 {name:<12}: {prev:.4f} -> {curr:.4f}  ({curr - prev:+.4f})")
+        print("\nEl modelo MEJORÓ" if d_f1 > 0 else ("\nEl modelo EMPEORÓ" if d_f1 < 0 else "\nSin cambio"))
+    else:
+        print("No hay corridas anteriores registradas para patologías. Esta es la primera.")
+    print("=" * 60)
+
+    previous_runs.append(current_run)
+    with open(PATHO_LOG_PATH, "w") as f:
+        json.dump(previous_runs, f, indent=2)
+
+
+if __name__ == "__main__":
+    main()

@@ -1,0 +1,13 @@
+[
+  {
+    "timestamp": "2026-08-25T15:23:41",
+    "epoch": 24,
+    "macro_f1": 0.0,
+    "per_class_f1": {
+      "bradicardia": 0.0,
+      "taquicardia": 0.0,
+      "arritmia": 0.0,
+      "hipoxemia": 0.0
+    }
+  }
+]
