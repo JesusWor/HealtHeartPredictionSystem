@@ -1,0 +1,138 @@
+Usando device: cpu
+Usando PPG REAL (BIDMC)
+[BIDMC train] 37 registros con PPG y SpO2 reales
+[BIDMC val  ] 8 registros con PPG y SpO2 reales
+[BIDMC test ] 8 registros con PPG y SpO2 reales
+Parámetros: 777,315
+No se encontró checkpoint — entrenamiento desde cero
+[BIDMC] aviso: fallo en bidmc-ppg-and-respiration-dataset-1.0.0\bidmc19 (ValueError: 'spo2' is not in list), probando siguiente.
+Epoch 001 | Train Loss=0.5385 MSE=0.0939 Pearson=0.9989 | Val Loss=0.5393 RMSE=0.1766 Corr=0.0039 PRD=5905286.50% | Patho F1=0.056
+  ✓ Guardado nuevo mejor modelo (val_loss=0.5393)
+[BIDMC] aviso: fallo en bidmc-ppg-and-respiration-dataset-1.0.0\bidmc19 (ValueError: 'spo2' is not in list), probando siguiente.
+Epoch 002 | Train Loss=0.5388 MSE=0.0947 Pearson=0.9994 | Val Loss=0.5354 RMSE=0.1635 Corr=0.0025 PRD=5073205.50% | Patho F1=0.056
+  ✓ Guardado nuevo mejor modelo (val_loss=0.5354)
+[BIDMC] aviso: fallo en bidmc-ppg-and-respiration-dataset-1.0.0\bidmc19 (ValueError: 'spo2' is not in list), probando siguiente.
+Epoch 003 | Train Loss=0.5322 MSE=0.0908 Pearson=1.0002 | Val Loss=0.5257 RMSE=0.1377 Corr=-0.0029 PRD=3412127.00% | Patho F1=0.056
+  ✓ Guardado nuevo mejor modelo (val_loss=0.5257)
+[BIDMC] aviso: fallo en bidmc-ppg-and-respiration-dataset-1.0.0\bidmc19 (ValueError: 'spo2' is not in list), probando siguiente.
+Epoch 004 | Train Loss=0.5210 MSE=0.0885 Pearson=1.0004 | Val Loss=0.5047 RMSE=0.1304 Corr=0.0021 PRD=2978368.25% | Patho F1=0.000
+  ✓ Guardado nuevo mejor modelo (val_loss=0.5047)
+[BIDMC] aviso: fallo en bidmc-ppg-and-respiration-dataset-1.0.0\bidmc19 (ValueError: 'spo2' is not in list), probando siguiente.
+Epoch 005 | Train Loss=0.4949 MSE=0.0858 Pearson=0.9990 | Val Loss=0.4547 RMSE=0.1157 Corr=-0.0010 PRD=2041527.00% | Patho F1=0.000
+  ✓ Guardado nuevo mejor modelo (val_loss=0.4547)
+[BIDMC] aviso: fallo en bidmc-ppg-and-respiration-dataset-1.0.0\bidmc19 (ValueError: 'spo2' is not in list), probando siguiente.
+Epoch 006 | Train Loss=0.4580 MSE=0.0844 Pearson=0.9990 | Val Loss=0.4426 RMSE=0.1028 Corr=-0.0049 PRD=1208132.50% | Patho F1=0.000
+  ✓ Guardado nuevo mejor modelo (val_loss=0.4426)
+[BIDMC] aviso: fallo en bidmc-ppg-and-respiration-dataset-1.0.0\bidmc19 (ValueError: 'spo2' is not in list), probando siguiente.
+Epoch 007 | Train Loss=0.4565 MSE=0.0840 Pearson=0.9991 | Val Loss=0.4512 RMSE=0.0940 Corr=-0.0062 PRD=650056.31% | Patho F1=0.000
+[BIDMC] aviso: fallo en bidmc-ppg-and-respiration-dataset-1.0.0\bidmc19 (ValueError: 'spo2' is not in list), probando siguiente.
+Epoch 008 | Train Loss=0.4593 MSE=0.0844 Pearson=0.9986 | Val Loss=0.4421 RMSE=0.1051 Corr=-0.0066 PRD=1351106.12% | Patho F1=0.000
+  ✓ Guardado nuevo mejor modelo (val_loss=0.4421)
+[BIDMC] aviso: fallo en bidmc-ppg-and-respiration-dataset-1.0.0\bidmc19 (ValueError: 'spo2' is not in list), probando siguiente.
+Epoch 009 | Train Loss=0.4615 MSE=0.0842 Pearson=0.9986 | Val Loss=0.4433 RMSE=0.1055 Corr=-0.0090 PRD=1381462.00% | Patho F1=0.000
+[BIDMC] aviso: fallo en bidmc-ppg-and-respiration-dataset-1.0.0\bidmc19 (ValueError: 'spo2' is not in list), probando siguiente.
+Epoch 010 | Train Loss=0.4557 MSE=0.0838 Pearson=0.9985 | Val Loss=0.4473 RMSE=0.0983 Corr=-0.0100 PRD=921507.75% | Patho F1=0.000
+[BIDMC] aviso: fallo en bidmc-ppg-and-respiration-dataset-1.0.0\bidmc19 (ValueError: 'spo2' is not in list), probando siguiente.
+Epoch 011 | Train Loss=0.4573 MSE=0.0834 Pearson=0.9970 | Val Loss=0.4439 RMSE=0.0932 Corr=-0.0097 PRD=599094.94% | Patho F1=0.000
+[BIDMC] aviso: fallo en bidmc-ppg-and-respiration-dataset-1.0.0\bidmc19 (ValueError: 'spo2' is not in list), probando siguiente.
+Epoch 012 | Train Loss=0.4535 MSE=0.0834 Pearson=0.9984 | Val Loss=0.4422 RMSE=0.0888 Corr=-0.0087 PRD=325626.91% | Patho F1=0.000
+[BIDMC] aviso: fallo en bidmc-ppg-and-respiration-dataset-1.0.0\bidmc19 (ValueError: 'spo2' is not in list), probando siguiente.
+Epoch 013 | Train Loss=0.4522 MSE=0.0833 Pearson=0.9970 | Val Loss=0.4428 RMSE=0.0893 Corr=-0.0096 PRD=344895.28% | Patho F1=0.000
+[BIDMC] aviso: fallo en bidmc-ppg-and-respiration-dataset-1.0.0\bidmc19 (ValueError: 'spo2' is not in list), probando siguiente.
+Epoch 014 | Train Loss=0.4470 MSE=0.0833 Pearson=0.9947 | Val Loss=0.4402 RMSE=0.0883 Corr=-0.0104 PRD=263351.47% | Patho F1=0.000
+  ✓ Guardado nuevo mejor modelo (val_loss=0.4402)
+[BIDMC] aviso: fallo en bidmc-ppg-and-respiration-dataset-1.0.0\bidmc19 (ValueError: 'spo2' is not in list), probando siguiente.
+Epoch 015 | Train Loss=0.4466 MSE=0.0833 Pearson=0.9960 | Val Loss=0.4438 RMSE=0.0898 Corr=-0.0130 PRD=312447.59% | Patho F1=0.000
+[BIDMC] aviso: fallo en bidmc-ppg-and-respiration-dataset-1.0.0\bidmc19 (ValueError: 'spo2' is not in list), probando siguiente.
+Epoch 016 | Train Loss=0.4567 MSE=0.0834 Pearson=0.9968 | Val Loss=0.4415 RMSE=0.0918 Corr=-0.0114 PRD=484200.25% | Patho F1=0.000
+[BIDMC] aviso: fallo en bidmc-ppg-and-respiration-dataset-1.0.0\bidmc19 (ValueError: 'spo2' is not in list), probando siguiente.
+Epoch 017 | Train Loss=0.4479 MSE=0.0832 Pearson=0.9951 | Val Loss=0.4430 RMSE=0.0888 Corr=-0.0099 PRD=315366.72% | Patho F1=0.000
+[BIDMC] aviso: fallo en bidmc-ppg-and-respiration-dataset-1.0.0\bidmc19 (ValueError: 'spo2' is not in list), probando siguiente.
+Epoch 018 | Train Loss=0.4443 MSE=0.0831 Pearson=0.9949 | Val Loss=0.4419 RMSE=0.0875 Corr=-0.0123 PRD=225020.88% | Patho F1=0.000
+[BIDMC] aviso: fallo en bidmc-ppg-and-respiration-dataset-1.0.0\bidmc19 (ValueError: 'spo2' is not in list), probando siguiente.
+Epoch 019 | Train Loss=0.4438 MSE=0.0831 Pearson=0.9952 | Val Loss=0.4402 RMSE=0.0869 Corr=-0.0129 PRD=190785.89% | Patho F1=0.000
+  ✓ Guardado nuevo mejor modelo (val_loss=0.4402)
+[BIDMC] aviso: fallo en bidmc-ppg-and-respiration-dataset-1.0.0\bidmc19 (ValueError: 'spo2' is not in list), probando siguiente.
+Epoch 020 | Train Loss=0.4464 MSE=0.0830 Pearson=0.9941 | Val Loss=0.4387 RMSE=0.0882 Corr=-0.0102 PRD=278955.00% | Patho F1=0.000
+  ✓ Guardado nuevo mejor modelo (val_loss=0.4387)
+[BIDMC] aviso: fallo en bidmc-ppg-and-respiration-dataset-1.0.0\bidmc19 (ValueError: 'spo2' is not in list), probando siguiente.
+Epoch 021 | Train Loss=0.4469 MSE=0.0832 Pearson=0.9963 | Val Loss=0.4410 RMSE=0.0871 Corr=-0.0080 PRD=204880.27% | Patho F1=0.000
+[BIDMC] aviso: fallo en bidmc-ppg-and-respiration-dataset-1.0.0\bidmc19 (ValueError: 'spo2' is not in list), probando siguiente.
+Epoch 022 | Train Loss=0.4456 MSE=0.0834 Pearson=0.9959 | Val Loss=0.4452 RMSE=0.0872 Corr=-0.0128 PRD=161807.52% | Patho F1=0.000
+[BIDMC] aviso: fallo en bidmc-ppg-and-respiration-dataset-1.0.0\bidmc19 (ValueError: 'spo2' is not in list), probando siguiente.
+Epoch 023 | Train Loss=0.4459 MSE=0.0833 Pearson=0.9965 | Val Loss=0.4405 RMSE=0.0860 Corr=-0.0113 PRD=135138.33% | Patho F1=0.000
+[BIDMC] aviso: fallo en bidmc-ppg-and-respiration-dataset-1.0.0\bidmc19 (ValueError: 'spo2' is not in list), probando siguiente.
+Epoch 024 | Train Loss=0.4554 MSE=0.0831 Pearson=0.9955 | Val Loss=0.4374 RMSE=0.0857 Corr=-0.0043 PRD=141810.36% | Patho F1=0.000
+  ✓ Guardado nuevo mejor modelo (val_loss=0.4374)
+[BIDMC] aviso: fallo en bidmc-ppg-and-respiration-dataset-1.0.0\bidmc19 (ValueError: 'spo2' is not in list), probando siguiente.
+Epoch 025 | Train Loss=0.4563 MSE=0.0831 Pearson=0.9933 | Val Loss=0.4410 RMSE=0.0867 Corr=-0.0060 PRD=201087.11% | Patho F1=0.000
+[BIDMC] aviso: fallo en bidmc-ppg-and-respiration-dataset-1.0.0\bidmc19 (ValueError: 'spo2' is not in list), probando siguiente.
+Epoch 026 | Train Loss=0.4448 MSE=0.0832 Pearson=0.9953 | Val Loss=0.4428 RMSE=0.0870 Corr=-0.0097 PRD=208303.45% | Patho F1=0.000
+[BIDMC] aviso: fallo en bidmc-ppg-and-respiration-dataset-1.0.0\bidmc19 (ValueError: 'spo2' is not in list), probando siguiente.
+Epoch 027 | Train Loss=0.4443 MSE=0.0829 Pearson=0.9928 | Val Loss=0.4401 RMSE=0.0865 Corr=-0.0099 PRD=174864.38% | Patho F1=0.000
+[BIDMC] aviso: fallo en bidmc-ppg-and-respiration-dataset-1.0.0\bidmc19 (ValueError: 'spo2' is not in list), probando siguiente.
+Epoch 028 | Train Loss=0.4526 MSE=0.0834 Pearson=0.9969 | Val Loss=0.4427 RMSE=0.0923 Corr=-0.0134 PRD=508661.38% | Patho F1=0.000
+[BIDMC] aviso: fallo en bidmc-ppg-and-respiration-dataset-1.0.0\bidmc19 (ValueError: 'spo2' is not in list), probando siguiente.
+Epoch 029 | Train Loss=0.4478 MSE=0.0833 Pearson=0.9961 | Val Loss=0.4414 RMSE=0.0900 Corr=-0.0137 PRD=355013.50% | Patho F1=0.000
+[BIDMC] aviso: fallo en bidmc-ppg-and-respiration-dataset-1.0.0\bidmc19 (ValueError: 'spo2' is not in list), probando siguiente.
+Epoch 030 | Train Loss=0.4481 MSE=0.0833 Pearson=0.9956 | Val Loss=0.4404 RMSE=0.0897 Corr=-0.0093 PRD=356703.75% | Patho F1=0.000
+[BIDMC] aviso: fallo en bidmc-ppg-and-respiration-dataset-1.0.0\bidmc19 (ValueError: 'spo2' is not in list), probando siguiente.
+Epoch 031 | Train Loss=0.4586 MSE=0.0835 Pearson=0.9990 | Val Loss=0.4382 RMSE=0.0882 Corr=-0.0023 PRD=287253.53% | Patho F1=0.000
+[BIDMC] aviso: fallo en bidmc-ppg-and-respiration-dataset-1.0.0\bidmc19 (ValueError: 'spo2' is not in list), probando siguiente.
+Epoch 032 | Train Loss=0.4555 MSE=0.0834 Pearson=0.9979 | Val Loss=0.4421 RMSE=0.0874 Corr=-0.0098 PRD=222403.23% | Patho F1=0.000
+[BIDMC] aviso: fallo en bidmc-ppg-and-respiration-dataset-1.0.0\bidmc19 (ValueError: 'spo2' is not in list), probando siguiente.
+Epoch 033 | Train Loss=0.4468 MSE=0.0831 Pearson=0.9952 | Val Loss=0.4404 RMSE=0.0866 Corr=-0.0105 PRD=179737.55% | Patho F1=0.000
+[BIDMC] aviso: fallo en bidmc-ppg-and-respiration-dataset-1.0.0\bidmc19 (ValueError: 'spo2' is not in list), probando siguiente.
+Epoch 034 | Train Loss=0.4546 MSE=0.0832 Pearson=0.9962 | Val Loss=0.4408 RMSE=0.0868 Corr=-0.0116 PRD=186642.61% | Patho F1=0.000
+[BIDMC] aviso: fallo en bidmc-ppg-and-respiration-dataset-1.0.0\bidmc19 (ValueError: 'spo2' is not in list), probando siguiente.
+Epoch 035 | Train Loss=0.4539 MSE=0.0828 Pearson=0.9936 | Val Loss=0.4418 RMSE=0.0867 Corr=-0.0113 PRD=178695.62% | Patho F1=0.000
+[BIDMC] aviso: fallo en bidmc-ppg-and-respiration-dataset-1.0.0\bidmc19 (ValueError: 'spo2' is not in list), probando siguiente.
+Epoch 036 | Train Loss=0.4479 MSE=0.0830 Pearson=0.9939 | Val Loss=0.4410 RMSE=0.0862 Corr=-0.0084 PRD=151440.59% | Patho F1=0.000
+[BIDMC] aviso: fallo en bidmc-ppg-and-respiration-dataset-1.0.0\bidmc19 (ValueError: 'spo2' is not in list), probando siguiente.
+Epoch 037 | Train Loss=0.4480 MSE=0.0833 Pearson=0.9964 | Val Loss=0.4412 RMSE=0.0857 Corr=-0.0087 PRD=113135.00% | Patho F1=0.000
+[BIDMC] aviso: fallo en bidmc-ppg-and-respiration-dataset-1.0.0\bidmc19 (ValueError: 'spo2' is not in list), probando siguiente.
+Epoch 038 | Train Loss=0.4502 MSE=0.0829 Pearson=0.9940 | Val Loss=0.4416 RMSE=0.0860 Corr=-0.0101 PRD=122096.34% | Patho F1=0.000
+[BIDMC] aviso: fallo en bidmc-ppg-and-respiration-dataset-1.0.0\bidmc19 (ValueError: 'spo2' is not in list), probando siguiente.
+Epoch 039 | Train Loss=0.4477 MSE=0.0830 Pearson=0.9942 | Val Loss=0.4408 RMSE=0.0861 Corr=-0.0100 PRD=127743.48% | Patho F1=0.000
+
+Early stopping en epoch 39 (sin mejora por 15 épocas)
+
+── Evaluación en test set ──
+Test RMSE: 0.0857
+Test Corr: -0.0062
+Test PRD: 137536.91%
+
+PRD por derivación:
+I   : 137628.55%
+II  : 100.21%
+III : 135629.22%
+aVR : 157134.30%
+aVL : 178820.95%
+aVF : 152094.52%
+V1  : 128688.99%
+V2  : 139114.42%
+V3  : 151517.11%
+V4  : 140375.11%
+V5  : 139934.31%
+V6  : 189405.11%
+
+=== Clasificación de patologías (test) ===
+
+Patología            F1   Precision    Recall   Support
+-------------------------------------------------------
+bradicardia       0.000       0.000     0.000         0
+taquicardia       0.000       0.000     0.000         2
+arritmia          0.000       0.000     0.000         0
+hipoxemia         0.000       0.000     0.000         2
+-------------------------------------------------------
+F1 macro          0.000
+
+Matrices de confusión por patología ([[TN, FP], [FN, TP]]):
+  bradicardia    : [[8, 0], [0, 0]]
+  taquicardia    : [[6, 0], [2, 0]]
+  arritmia       : [[0, 8], [0, 0]]
+  hipoxemia      : [[6, 0], [2, 0]]
+
+============================================================
+No hay corridas anteriores registradas para patologías. Esta es la primera.
+============================================================

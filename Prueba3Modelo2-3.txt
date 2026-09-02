@@ -1,0 +1,57 @@
+Epoch 041 | Train Loss=1.3717 MSE=0.9892 Pearson=0.8886 | Val Loss=1.4003 RMSE=1.0050 Corr=-0.0176 PRD=100.50% | Patho F1=0.250
+Epoch 042 | Train Loss=1.3665 MSE=0.9885 Pearson=0.8896 | Val Loss=1.3655 RMSE=1.0010 Corr=0.0581 PRD=100.10% | Patho F1=0.250
+  ✓ Guardado nuevo mejor modelo (val_loss=1.3655)
+Epoch 043 | Train Loss=1.3601 MSE=0.9863 Pearson=0.8793 | Val Loss=1.4288 RMSE=1.0115 Corr=-0.0703 PRD=101.15% | Patho F1=0.250
+Epoch 044 | Train Loss=1.3553 MSE=0.9853 Pearson=0.8811 | Val Loss=1.3871 RMSE=1.0046 Corr=0.0105 PRD=100.46% | Patho F1=0.250
+Epoch 045 | Train Loss=1.3552 MSE=0.9825 Pearson=0.8733 | Val Loss=1.3936 RMSE=1.0073 Corr=0.0169 PRD=100.73% | Patho F1=0.250
+Epoch 046 | Train Loss=1.3561 MSE=0.9840 Pearson=0.8734 | Val Loss=1.4485 RMSE=1.0131 Corr=0.0230 PRD=101.31% | Patho F1=0.125
+Epoch 047 | Train Loss=1.3759 MSE=0.9943 Pearson=0.9019 | Val Loss=1.4156 RMSE=1.0121 Corr=0.0022 PRD=101.21% | Patho F1=0.250
+Epoch 048 | Train Loss=1.3901 MSE=0.9965 Pearson=0.9187 | Val Loss=1.4529 RMSE=1.0148 Corr=-0.0734 PRD=101.48% | Patho F1=0.000
+Epoch 049 | Train Loss=1.3781 MSE=0.9915 Pearson=0.9119 | Val Loss=1.4062 RMSE=1.0082 Corr=-0.0262 PRD=100.82% | Patho F1=0.250
+Epoch 050 | Train Loss=1.3621 MSE=0.9879 Pearson=0.8962 | Val Loss=1.4033 RMSE=1.0094 Corr=-0.0341 PRD=100.94% | Patho F1=0.250
+Epoch 051 | Train Loss=1.3615 MSE=0.9892 Pearson=0.8952 | Val Loss=1.3850 RMSE=1.0046 Corr=0.0028 PRD=100.46% | Patho F1=0.250
+Epoch 052 | Train Loss=1.3550 MSE=0.9864 Pearson=0.8899 | Val Loss=1.4006 RMSE=1.0063 Corr=-0.0196 PRD=100.63% | Patho F1=0.250
+Epoch 053 | Train Loss=1.3683 MSE=0.9874 Pearson=0.8955 | Val Loss=1.3959 RMSE=1.0055 Corr=-0.0012 PRD=100.55% | Patho F1=0.250
+Epoch 054 | Train Loss=1.3478 MSE=0.9811 Pearson=0.8696 | Val Loss=1.3810 RMSE=1.0023 Corr=0.0304 PRD=100.23% | Patho F1=0.250
+Epoch 055 | Train Loss=1.3427 MSE=0.9819 Pearson=0.8744 | Val Loss=1.3809 RMSE=1.0048 Corr=0.0227 PRD=100.48% | Patho F1=0.250
+Epoch 056 | Train Loss=1.3464 MSE=0.9839 Pearson=0.8757 | Val Loss=1.3710 RMSE=1.0018 Corr=0.0330 PRD=100.18% | Patho F1=0.250
+Epoch 057 | Train Loss=1.3541 MSE=0.9824 Pearson=0.8823 | Val Loss=1.3756 RMSE=1.0022 Corr=0.0277 PRD=100.22% | Patho F1=0.250
+
+Early stopping en epoch 57 (sin mejora por 15 épocas)
+
+── Evaluación en test set ──
+Test RMSE: 1.0110
+Test Corr: -0.0120
+Test PRD: 101.10%
+
+PRD por derivación:
+I   : 101.10%
+
+=== Clasificación de patologías (test) ===
+
+Patología            F1   Precision    Recall   Support
+-------------------------------------------------------
+bradicardia       0.000       0.000     0.000         0
+taquicardia       0.000       0.000     0.000         2
+arritmia          0.000       0.000     0.000         0
+hipoxemia         1.000       1.000     1.000         2
+-------------------------------------------------------
+F1 macro          0.250
+
+Matrices de confusión por patología ([[TN, FP], [FN, TP]]):
+  bradicardia    : [[8, 0], [0, 0]]
+  taquicardia    : [[6, 0], [2, 0]]
+  arritmia       : [[8, 0], [0, 0]]
+  hipoxemia      : [[6, 0], [0, 2]]
+
+============================================================
+COMPARACIÓN PATOLOGÍAS CON LA CORRIDA ANTERIOR
+============================================================
+F1 macro             0.2500      0.2500     +0.0000
+  F1 bradicardia : 0.0000 -> 0.0000  (+0.0000)
+  F1 taquicardia : 0.0000 -> 0.0000  (+0.0000)
+  F1 arritmia    : 0.0000 -> 0.0000  (+0.0000)
+  F1 hipoxemia   : 1.0000 -> 1.0000  (+0.0000)
+
+Sin cambio en clasificación de patologías.
+============================================================

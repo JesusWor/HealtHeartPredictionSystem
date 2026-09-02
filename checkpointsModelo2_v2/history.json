@@ -1,0 +1,3295 @@
+[
+  {
+    "epoch": 1,
+    "train": {
+      "loss": 1.4099140015384422,
+      "mse": 1.0020713746298306,
+      "pearson": 0.9750447874011576,
+      "smooth": 2.652578790381924e-05
+    },
+    "val": {
+      "loss": 1.366695070865264,
+      "mse": 1.0024274148701624,
+      "pearson": 1.0035508624180591,
+      "pathology_bce": 0.3159067430007408,
+      "rmse_mean": 1.0012129545211792,
+      "prd_mean": 100.10791778564453,
+      "corr_mean": 0.01446693204343319,
+      "prd_per_lead": [
+        100.10791778564453
+      ],
+      "corr_per_lead": [
+        0.01446693204343319
+      ],
+      "pathology_metrics": {
+        "macro_f1": 0.0,
+        "n_classes_evaluated": 3,
+        "per_class": {
+          "bradicardia": {
+            "f1": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "support": 0,
+            "n_valid_samples": 1912,
+            "confusion_matrix": [
+              [
+                1912,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ]
+          },
+          "taquicardia": {
+            "f1": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "support": 168,
+            "n_valid_samples": 1912,
+            "confusion_matrix": [
+              [
+                1744,
+                0
+              ],
+              [
+                168,
+                0
+              ]
+            ]
+          },
+          "arritmia": {
+            "f1": null,
+            "precision": null,
+            "recall": null,
+            "support": 0,
+            "n_valid_samples": 0,
+            "confusion_matrix": null
+          },
+          "hipoxemia": {
+            "f1": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "support": 110,
+            "n_valid_samples": 1911,
+            "confusion_matrix": [
+              [
+                1801,
+                0
+              ],
+              [
+                110,
+                0
+              ]
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "epoch": 2,
+    "train": {
+      "loss": 1.3241272898731204,
+      "mse": 0.9872839987582797,
+      "pearson": 0.8830095617674717,
+      "smooth": 0.0001445469526350061
+    },
+    "val": {
+      "loss": 1.3399775522024562,
+      "mse": 1.006311020342376,
+      "pearson": 0.9570065390116002,
+      "pathology_bce": 0.2326797175856315,
+      "rmse_mean": 1.003150463104248,
+      "prd_mean": 100.3016357421875,
+      "corr_mean": 0.04592828080058098,
+      "prd_per_lead": [
+        100.3016357421875
+      ],
+      "corr_per_lead": [
+        0.04592828080058098
+      ],
+      "pathology_metrics": {
+        "macro_f1": 0.0,
+        "n_classes_evaluated": 3,
+        "per_class": {
+          "bradicardia": {
+            "f1": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "support": 0,
+            "n_valid_samples": 1912,
+            "confusion_matrix": [
+              [
+                1912,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ]
+          },
+          "taquicardia": {
+            "f1": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "support": 168,
+            "n_valid_samples": 1912,
+            "confusion_matrix": [
+              [
+                1744,
+                0
+              ],
+              [
+                168,
+                0
+              ]
+            ]
+          },
+          "arritmia": {
+            "f1": null,
+            "precision": null,
+            "recall": null,
+            "support": 0,
+            "n_valid_samples": 0,
+            "confusion_matrix": null
+          },
+          "hipoxemia": {
+            "f1": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "support": 110,
+            "n_valid_samples": 1911,
+            "confusion_matrix": [
+              [
+                1801,
+                0
+              ],
+              [
+                110,
+                0
+              ]
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "epoch": 3,
+    "train": {
+      "loss": 1.3004651755745718,
+      "mse": 0.976531233470532,
+      "pearson": 0.8437317332962068,
+      "smooth": 0.0004509382360764861
+    },
+    "val": {
+      "loss": 1.402895744375604,
+      "mse": 1.027191924749558,
+      "pearson": 1.027836390120215,
+      "pathology_bce": 0.3363082300419588,
+      "rmse_mean": 1.0135048627853394,
+      "prd_mean": 101.33692932128906,
+      "corr_mean": -0.026327066123485565,
+      "prd_per_lead": [
+        101.33692932128906
+      ],
+      "corr_per_lead": [
+        -0.026327066123485565
+      ],
+      "pathology_metrics": {
+        "macro_f1": 0.0,
+        "n_classes_evaluated": 3,
+        "per_class": {
+          "bradicardia": {
+            "f1": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "support": 0,
+            "n_valid_samples": 1912,
+            "confusion_matrix": [
+              [
+                1912,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ]
+          },
+          "taquicardia": {
+            "f1": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "support": 168,
+            "n_valid_samples": 1912,
+            "confusion_matrix": [
+              [
+                1744,
+                0
+              ],
+              [
+                168,
+                0
+              ]
+            ]
+          },
+          "arritmia": {
+            "f1": null,
+            "precision": null,
+            "recall": null,
+            "support": 0,
+            "n_valid_samples": 0,
+            "confusion_matrix": null
+          },
+          "hipoxemia": {
+            "f1": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "support": 110,
+            "n_valid_samples": 1911,
+            "confusion_matrix": [
+              [
+                1801,
+                0
+              ],
+              [
+                110,
+                0
+              ]
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "epoch": 4,
+    "train": {
+      "loss": 1.354978090327931,
+      "mse": 1.0002929374596397,
+      "pearson": 0.9185220962455249,
+      "smooth": 0.00022923580526117962
+    },
+    "val": {
+      "loss": 1.3346984286687364,
+      "mse": 1.009334218551923,
+      "pearson": 0.9416039049874788,
+      "pathology_bce": 0.2141727711615702,
+      "rmse_mean": 1.004656195640564,
+      "prd_mean": 100.45219421386719,
+      "corr_mean": 0.059779033064842224,
+      "prd_per_lead": [
+        100.45219421386719
+      ],
+      "corr_per_lead": [
+        0.059779033064842224
+      ],
+      "pathology_metrics": {
+        "macro_f1": 0.0,
+        "n_classes_evaluated": 3,
+        "per_class": {
+          "bradicardia": {
+            "f1": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "support": 0,
+            "n_valid_samples": 1912,
+            "confusion_matrix": [
+              [
+                1912,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ]
+          },
+          "taquicardia": {
+            "f1": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "support": 168,
+            "n_valid_samples": 1912,
+            "confusion_matrix": [
+              [
+                1744,
+                0
+              ],
+              [
+                168,
+                0
+              ]
+            ]
+          },
+          "arritmia": {
+            "f1": null,
+            "precision": null,
+            "recall": null,
+            "support": 0,
+            "n_valid_samples": 0,
+            "confusion_matrix": null
+          },
+          "hipoxemia": {
+            "f1": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "support": 110,
+            "n_valid_samples": 1911,
+            "confusion_matrix": [
+              [
+                1801,
+                0
+              ],
+              [
+                110,
+                0
+              ]
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "epoch": 5,
+    "train": {
+      "loss": 1.2615639845862714,
+      "mse": 0.9554943595027879,
+      "pearson": 0.7888971899953459,
+      "smooth": 0.001137465071281646
+    },
+    "val": {
+      "loss": 1.2985020481891711,
+      "mse": 0.9999971591777881,
+      "pearson": 0.8479307253989216,
+      "pathology_bce": 0.21979456603776462,
+      "rmse_mean": 0.9999986290931702,
+      "prd_mean": 99.98649597167969,
+      "corr_mean": 0.13776859641075134,
+      "prd_per_lead": [
+        99.98649597167969
+      ],
+      "corr_per_lead": [
+        0.13776859641075134
+      ],
+      "pathology_metrics": {
+        "macro_f1": 0.0,
+        "n_classes_evaluated": 3,
+        "per_class": {
+          "bradicardia": {
+            "f1": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "support": 0,
+            "n_valid_samples": 1912,
+            "confusion_matrix": [
+              [
+                1912,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ]
+          },
+          "taquicardia": {
+            "f1": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "support": 168,
+            "n_valid_samples": 1912,
+            "confusion_matrix": [
+              [
+                1744,
+                0
+              ],
+              [
+                168,
+                0
+              ]
+            ]
+          },
+          "arritmia": {
+            "f1": null,
+            "precision": null,
+            "recall": null,
+            "support": 0,
+            "n_valid_samples": 0,
+            "confusion_matrix": null
+          },
+          "hipoxemia": {
+            "f1": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "support": 110,
+            "n_valid_samples": 1911,
+            "confusion_matrix": [
+              [
+                1801,
+                0
+              ],
+              [
+                110,
+                0
+              ]
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "epoch": 6,
+    "train": {
+      "loss": 1.2001258667432004,
+      "mse": 0.9171388661068908,
+      "pearson": 0.7147313933048842,
+      "smooth": 0.0032213926248196973
+    },
+    "val": {
+      "loss": 1.3676152199382063,
+      "mse": 1.0465728383682762,
+      "pearson": 0.925852482538343,
+      "pathology_bce": 0.21521665841715107,
+      "rmse_mean": 1.0230214595794678,
+      "prd_mean": 102.2884750366211,
+      "corr_mean": 0.07512282580137253,
+      "prd_per_lead": [
+        102.2884750366211
+      ],
+      "corr_per_lead": [
+        0.07512282580137253
+      ],
+      "pathology_metrics": {
+        "macro_f1": 0.0,
+        "n_classes_evaluated": 3,
+        "per_class": {
+          "bradicardia": {
+            "f1": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "support": 0,
+            "n_valid_samples": 1912,
+            "confusion_matrix": [
+              [
+                1912,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ]
+          },
+          "taquicardia": {
+            "f1": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "support": 168,
+            "n_valid_samples": 1912,
+            "confusion_matrix": [
+              [
+                1744,
+                0
+              ],
+              [
+                168,
+                0
+              ]
+            ]
+          },
+          "arritmia": {
+            "f1": null,
+            "precision": null,
+            "recall": null,
+            "support": 0,
+            "n_valid_samples": 0,
+            "confusion_matrix": null
+          },
+          "hipoxemia": {
+            "f1": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "support": 110,
+            "n_valid_samples": 1911,
+            "confusion_matrix": [
+              [
+                1801,
+                0
+              ],
+              [
+                110,
+                0
+              ]
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "epoch": 7,
+    "train": {
+      "loss": 1.144231727099984,
+      "mse": 0.8783676980097092,
+      "pearson": 0.6636711066127211,
+      "smooth": 0.006097549780846501
+    },
+    "val": {
+      "loss": 1.3793404880427915,
+      "mse": 1.070405414912491,
+      "pearson": 0.8859109225133472,
+      "pathology_bce": 0.21286732768912695,
+      "rmse_mean": 1.0346039533615112,
+      "prd_mean": 103.44656372070312,
+      "corr_mean": 0.09052812308073044,
+      "prd_per_lead": [
+        103.44656372070312
+      ],
+      "corr_per_lead": [
+        0.09052812308073044
+      ],
+      "pathology_metrics": {
+        "macro_f1": 0.0,
+        "n_classes_evaluated": 3,
+        "per_class": {
+          "bradicardia": {
+            "f1": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "support": 0,
+            "n_valid_samples": 1912,
+            "confusion_matrix": [
+              [
+                1912,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ]
+          },
+          "taquicardia": {
+            "f1": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "support": 168,
+            "n_valid_samples": 1912,
+            "confusion_matrix": [
+              [
+                1744,
+                0
+              ],
+              [
+                168,
+                0
+              ]
+            ]
+          },
+          "arritmia": {
+            "f1": null,
+            "precision": null,
+            "recall": null,
+            "support": 0,
+            "n_valid_samples": 0,
+            "confusion_matrix": null
+          },
+          "hipoxemia": {
+            "f1": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "support": 110,
+            "n_valid_samples": 1911,
+            "confusion_matrix": [
+              [
+                1801,
+                0
+              ],
+              [
+                110,
+                0
+              ]
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "epoch": 8,
+    "train": {
+      "loss": 1.1000950046607585,
+      "mse": 0.855080776245635,
+      "pearson": 0.6363432809177081,
+      "smooth": 0.009288185127581734
+    },
+    "val": {
+      "loss": 1.3488793462888966,
+      "mse": 1.0439375210007864,
+      "pearson": 0.9236503041438977,
+      "pathology_bce": 0.13682749568169086,
+      "rmse_mean": 1.0217325687408447,
+      "prd_mean": 102.15959167480469,
+      "corr_mean": 0.09215334802865982,
+      "prd_per_lead": [
+        102.15959167480469
+      ],
+      "corr_per_lead": [
+        0.09215334802865982
+      ],
+      "pathology_metrics": {
+        "macro_f1": 0.4846,
+        "n_classes_evaluated": 3,
+        "per_class": {
+          "bradicardia": {
+            "f1": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "support": 0,
+            "n_valid_samples": 1912,
+            "confusion_matrix": [
+              [
+                1912,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ]
+          },
+          "taquicardia": {
+            "f1": 0.6538,
+            "precision": 0.9239,
+            "recall": 0.506,
+            "support": 168,
+            "n_valid_samples": 1912,
+            "confusion_matrix": [
+              [
+                1737,
+                7
+              ],
+              [
+                83,
+                85
+              ]
+            ]
+          },
+          "arritmia": {
+            "f1": null,
+            "precision": null,
+            "recall": null,
+            "support": 0,
+            "n_valid_samples": 0,
+            "confusion_matrix": null
+          },
+          "hipoxemia": {
+            "f1": 0.8,
+            "precision": 0.8,
+            "recall": 0.8,
+            "support": 110,
+            "n_valid_samples": 1911,
+            "confusion_matrix": [
+              [
+                1779,
+                22
+              ],
+              [
+                22,
+                88
+              ]
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "epoch": 9,
+    "train": {
+      "loss": 1.1946935884512506,
+      "mse": 0.9279210292312058,
+      "pearson": 0.7405886127748139,
+      "smooth": 0.005847990194802973
+    },
+    "val": {
+      "loss": 1.287729461821552,
+      "mse": 1.0078803545261528,
+      "pearson": 0.8687319166989506,
+      "pathology_bce": 0.09414979022884717,
+      "rmse_mean": 1.0039323568344116,
+      "prd_mean": 100.37981414794922,
+      "corr_mean": 0.12708218395709991,
+      "prd_per_lead": [
+        100.37981414794922
+      ],
+      "corr_per_lead": [
+        0.12708218395709991
+      ],
+      "pathology_metrics": {
+        "macro_f1": 0.4002,
+        "n_classes_evaluated": 3,
+        "per_class": {
+          "bradicardia": {
+            "f1": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "support": 0,
+            "n_valid_samples": 1912,
+            "confusion_matrix": [
+              [
+                1912,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ]
+          },
+          "taquicardia": {
+            "f1": 0.3828,
+            "precision": 0.9756,
+            "recall": 0.2381,
+            "support": 168,
+            "n_valid_samples": 1912,
+            "confusion_matrix": [
+              [
+                1743,
+                1
+              ],
+              [
+                128,
+                40
+              ]
+            ]
+          },
+          "arritmia": {
+            "f1": null,
+            "precision": null,
+            "recall": null,
+            "support": 0,
+            "n_valid_samples": 0,
+            "confusion_matrix": null
+          },
+          "hipoxemia": {
+            "f1": 0.8178,
+            "precision": 0.7372,
+            "recall": 0.9182,
+            "support": 110,
+            "n_valid_samples": 1911,
+            "confusion_matrix": [
+              [
+                1765,
+                36
+              ],
+              [
+                9,
+                101
+              ]
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "epoch": 10,
+    "train": {
+      "loss": 1.1267921630308717,
+      "mse": 0.8888194656604836,
+      "pearson": 0.6839647794091275,
+      "smooth": 0.007635625647766293
+    },
+    "val": {
+      "loss": 1.3707585913366853,
+      "mse": 1.0603244943100039,
+      "pearson": 0.9051753566853671,
+      "pathology_bce": 0.19152116358560747,
+      "rmse_mean": 1.029720664024353,
+      "prd_mean": 102.95831298828125,
+      "corr_mean": 0.07452657073736191,
+      "prd_per_lead": [
+        102.95831298828125
+      ],
+      "corr_per_lead": [
+        0.07452657073736191
+      ],
+      "pathology_metrics": {
+        "macro_f1": 0.1307,
+        "n_classes_evaluated": 3,
+        "per_class": {
+          "bradicardia": {
+            "f1": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "support": 0,
+            "n_valid_samples": 1912,
+            "confusion_matrix": [
+              [
+                1912,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ]
+          },
+          "taquicardia": {
+            "f1": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "support": 168,
+            "n_valid_samples": 1912,
+            "confusion_matrix": [
+              [
+                1744,
+                0
+              ],
+              [
+                168,
+                0
+              ]
+            ]
+          },
+          "arritmia": {
+            "f1": null,
+            "precision": null,
+            "recall": null,
+            "support": 0,
+            "n_valid_samples": 0,
+            "confusion_matrix": null
+          },
+          "hipoxemia": {
+            "f1": 0.3922,
+            "precision": 0.2439,
+            "recall": 1.0,
+            "support": 110,
+            "n_valid_samples": 1911,
+            "confusion_matrix": [
+              [
+                1460,
+                341
+              ],
+              [
+                0,
+                110
+              ]
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "epoch": 11,
+    "train": {
+      "loss": 1.2531512954078792,
+      "mse": 0.9629699151663379,
+      "pearson": 0.8306379978848524,
+      "smooth": 0.002969479435495859
+    },
+    "val": {
+      "loss": 1.408247949189222,
+      "mse": 1.0608530752828431,
+      "pearson": 0.99117793647814,
+      "pathology_bce": 0.2483931450742184,
+      "rmse_mean": 1.0299772024154663,
+      "prd_mean": 102.98396301269531,
+      "corr_mean": -0.0191980991512537,
+      "prd_per_lead": [
+        102.98396301269531
+      ],
+      "corr_per_lead": [
+        -0.0191980991512537
+      ],
+      "pathology_metrics": {
+        "macro_f1": 0.1075,
+        "n_classes_evaluated": 3,
+        "per_class": {
+          "bradicardia": {
+            "f1": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "support": 0,
+            "n_valid_samples": 1912,
+            "confusion_matrix": [
+              [
+                1912,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ]
+          },
+          "taquicardia": {
+            "f1": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "support": 168,
+            "n_valid_samples": 1912,
+            "confusion_matrix": [
+              [
+                1744,
+                0
+              ],
+              [
+                168,
+                0
+              ]
+            ]
+          },
+          "arritmia": {
+            "f1": null,
+            "precision": null,
+            "recall": null,
+            "support": 0,
+            "n_valid_samples": 0,
+            "confusion_matrix": null
+          },
+          "hipoxemia": {
+            "f1": 0.3226,
+            "precision": 0.1923,
+            "recall": 1.0,
+            "support": 110,
+            "n_valid_samples": 1911,
+            "confusion_matrix": [
+              [
+                1339,
+                462
+              ],
+              [
+                0,
+                110
+              ]
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "epoch": 12,
+    "train": {
+      "loss": 1.1508680191886862,
+      "mse": 0.9067753867624195,
+      "pearson": 0.7225552048310742,
+      "smooth": 0.0064199498799590105
+    },
+    "val": {
+      "loss": 1.4546360770030002,
+      "mse": 1.1266012665616918,
+      "pearson": 1.011987409831091,
+      "pathology_bce": 0.11864651593079627,
+      "rmse_mean": 1.0614149570465088,
+      "prd_mean": 106.12731170654297,
+      "corr_mean": -0.03495665639638901,
+      "prd_per_lead": [
+        106.12731170654297
+      ],
+      "corr_per_lead": [
+        -0.03495665639638901
+      ],
+      "pathology_metrics": {
+        "macro_f1": 0.4656,
+        "n_classes_evaluated": 3,
+        "per_class": {
+          "bradicardia": {
+            "f1": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "support": 0,
+            "n_valid_samples": 1912,
+            "confusion_matrix": [
+              [
+                1912,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ]
+          },
+          "taquicardia": {
+            "f1": 0.6885,
+            "precision": 0.6364,
+            "recall": 0.75,
+            "support": 168,
+            "n_valid_samples": 1912,
+            "confusion_matrix": [
+              [
+                1672,
+                72
+              ],
+              [
+                42,
+                126
+              ]
+            ]
+          },
+          "arritmia": {
+            "f1": null,
+            "precision": null,
+            "recall": null,
+            "support": 0,
+            "n_valid_samples": 0,
+            "confusion_matrix": null
+          },
+          "hipoxemia": {
+            "f1": 0.7082,
+            "precision": 0.5538,
+            "recall": 0.9818,
+            "support": 110,
+            "n_valid_samples": 1911,
+            "confusion_matrix": [
+              [
+                1714,
+                87
+              ],
+              [
+                2,
+                108
+              ]
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "epoch": 13,
+    "train": {
+      "loss": 1.0321841185340102,
+      "mse": 0.8289347898400368,
+      "pearson": 0.6102693177610705,
+      "smooth": 0.013030541554155709
+    },
+    "val": {
+      "loss": 1.524764425086177,
+      "mse": 1.1806123126999604,
+      "pearson": 1.0438729983493373,
+      "pathology_bce": 0.14916535725458582,
+      "rmse_mean": 1.086559772491455,
+      "prd_mean": 108.6414566040039,
+      "corr_mean": -0.061582889407873154,
+      "prd_per_lead": [
+        108.6414566040039
+      ],
+      "corr_per_lead": [
+        -0.061582889407873154
+      ],
+      "pathology_metrics": {
+        "macro_f1": 0.2546,
+        "n_classes_evaluated": 3,
+        "per_class": {
+          "bradicardia": {
+            "f1": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "support": 0,
+            "n_valid_samples": 1912,
+            "confusion_matrix": [
+              [
+                1912,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ]
+          },
+          "taquicardia": {
+            "f1": 0.0578,
+            "precision": 1.0,
+            "recall": 0.0298,
+            "support": 168,
+            "n_valid_samples": 1912,
+            "confusion_matrix": [
+              [
+                1744,
+                0
+              ],
+              [
+                163,
+                5
+              ]
+            ]
+          },
+          "arritmia": {
+            "f1": null,
+            "precision": null,
+            "recall": null,
+            "support": 0,
+            "n_valid_samples": 0,
+            "confusion_matrix": null
+          },
+          "hipoxemia": {
+            "f1": 0.7059,
+            "precision": 0.551,
+            "recall": 0.9818,
+            "support": 110,
+            "n_valid_samples": 1911,
+            "confusion_matrix": [
+              [
+                1713,
+                88
+              ],
+              [
+                2,
+                108
+              ]
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "epoch": 14,
+    "train": {
+      "loss": 0.9725367314645935,
+      "mse": 0.7859924668935442,
+      "pearson": 0.5611803284748828,
+      "smooth": 0.01692428816800919
+    },
+    "val": {
+      "loss": 1.4513967930023641,
+      "mse": 1.1264910573241103,
+      "pearson": 0.9685189808761724,
+      "pathology_bce": 0.16566220821937444,
+      "rmse_mean": 1.0613627433776855,
+      "prd_mean": 106.12210083007812,
+      "corr_mean": 0.039335448294878006,
+      "prd_per_lead": [
+        106.12210083007812
+      ],
+      "corr_per_lead": [
+        0.039335448294878006
+      ],
+      "pathology_metrics": {
+        "macro_f1": 0.4093,
+        "n_classes_evaluated": 3,
+        "per_class": {
+          "bradicardia": {
+            "f1": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "support": 0,
+            "n_valid_samples": 1912,
+            "confusion_matrix": [
+              [
+                1912,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ]
+          },
+          "taquicardia": {
+            "f1": 0.483,
+            "precision": 0.3318,
+            "recall": 0.8869,
+            "support": 168,
+            "n_valid_samples": 1912,
+            "confusion_matrix": [
+              [
+                1444,
+                300
+              ],
+              [
+                19,
+                149
+              ]
+            ]
+          },
+          "arritmia": {
+            "f1": null,
+            "precision": null,
+            "recall": null,
+            "support": 0,
+            "n_valid_samples": 0,
+            "confusion_matrix": null
+          },
+          "hipoxemia": {
+            "f1": 0.7448,
+            "precision": 0.6,
+            "recall": 0.9818,
+            "support": 110,
+            "n_valid_samples": 1911,
+            "confusion_matrix": [
+              [
+                1729,
+                72
+              ],
+              [
+                2,
+                108
+              ]
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "epoch": 15,
+    "train": {
+      "loss": 0.9304346211950816,
+      "mse": 0.7565148451726196,
+      "pearson": 0.5297457061496683,
+      "smooth": 0.02053684711210371
+    },
+    "val": {
+      "loss": 1.3868811599380302,
+      "mse": 1.091561401239499,
+      "pearson": 0.946697754839973,
+      "pathology_bce": 0.05143883601698058,
+      "rmse_mean": 1.0447781085968018,
+      "prd_mean": 104.46385192871094,
+      "corr_mean": 0.06546077877283096,
+      "prd_per_lead": [
+        104.46385192871094
+      ],
+      "corr_per_lead": [
+        0.06546077877283096
+      ],
+      "pathology_metrics": {
+        "macro_f1": 0.5351,
+        "n_classes_evaluated": 3,
+        "per_class": {
+          "bradicardia": {
+            "f1": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "support": 0,
+            "n_valid_samples": 1912,
+            "confusion_matrix": [
+              [
+                1912,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ]
+          },
+          "taquicardia": {
+            "f1": 0.6794,
+            "precision": 0.9468,
+            "recall": 0.5298,
+            "support": 168,
+            "n_valid_samples": 1912,
+            "confusion_matrix": [
+              [
+                1739,
+                5
+              ],
+              [
+                79,
+                89
+              ]
+            ]
+          },
+          "arritmia": {
+            "f1": null,
+            "precision": null,
+            "recall": null,
+            "support": 0,
+            "n_valid_samples": 0,
+            "confusion_matrix": null
+          },
+          "hipoxemia": {
+            "f1": 0.9258,
+            "precision": 0.8908,
+            "recall": 0.9636,
+            "support": 110,
+            "n_valid_samples": 1911,
+            "confusion_matrix": [
+              [
+                1788,
+                13
+              ],
+              [
+                4,
+                106
+              ]
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "epoch": 16,
+    "train": {
+      "loss": 0.9078021047559798,
+      "mse": 0.7400642260735891,
+      "pearson": 0.5128915617212148,
+      "smooth": 0.022844734960610177
+    },
+    "val": {
+      "loss": 1.5247877566884251,
+      "mse": 1.1929933341477206,
+      "pearson": 1.034852863854444,
+      "pathology_bce": 0.1006444923377062,
+      "rmse_mean": 1.0922422409057617,
+      "prd_mean": 109.20963287353516,
+      "corr_mean": -0.03272407501935959,
+      "prd_per_lead": [
+        109.20963287353516
+      ],
+      "corr_per_lead": [
+        -0.03272407501935959
+      ],
+      "pathology_metrics": {
+        "macro_f1": 0.4595,
+        "n_classes_evaluated": 3,
+        "per_class": {
+          "bradicardia": {
+            "f1": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "support": 0,
+            "n_valid_samples": 1912,
+            "confusion_matrix": [
+              [
+                1912,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ]
+          },
+          "taquicardia": {
+            "f1": 0.7849,
+            "precision": 0.7157,
+            "recall": 0.869,
+            "support": 168,
+            "n_valid_samples": 1912,
+            "confusion_matrix": [
+              [
+                1686,
+                58
+              ],
+              [
+                22,
+                146
+              ]
+            ]
+          },
+          "arritmia": {
+            "f1": null,
+            "precision": null,
+            "recall": null,
+            "support": 0,
+            "n_valid_samples": 0,
+            "confusion_matrix": null
+          },
+          "hipoxemia": {
+            "f1": 0.5934,
+            "precision": 0.4252,
+            "recall": 0.9818,
+            "support": 110,
+            "n_valid_samples": 1911,
+            "confusion_matrix": [
+              [
+                1655,
+                146
+              ],
+              [
+                2,
+                108
+              ]
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "epoch": 17,
+    "train": {
+      "loss": 0.8876404845398673,
+      "mse": 0.725396654207947,
+      "pearson": 0.49767103618048114,
+      "smooth": 0.025304463404949074
+    },
+    "val": {
+      "loss": 1.5251407832780144,
+      "mse": 1.1762979728906224,
+      "pearson": 1.0471341804480452,
+      "pathology_bce": 0.16773810697998073,
+      "rmse_mean": 1.0845727920532227,
+      "prd_mean": 108.44277954101562,
+      "corr_mean": -0.043569084256887436,
+      "prd_per_lead": [
+        108.44277954101562
+      ],
+      "corr_per_lead": [
+        -0.043569084256887436
+      ],
+      "pathology_metrics": {
+        "macro_f1": 0.3114,
+        "n_classes_evaluated": 3,
+        "per_class": {
+          "bradicardia": {
+            "f1": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "support": 0,
+            "n_valid_samples": 1912,
+            "confusion_matrix": [
+              [
+                1912,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ]
+          },
+          "taquicardia": {
+            "f1": 0.2021,
+            "precision": 0.95,
+            "recall": 0.1131,
+            "support": 168,
+            "n_valid_samples": 1912,
+            "confusion_matrix": [
+              [
+                1743,
+                1
+              ],
+              [
+                149,
+                19
+              ]
+            ]
+          },
+          "arritmia": {
+            "f1": null,
+            "precision": null,
+            "recall": null,
+            "support": 0,
+            "n_valid_samples": 0,
+            "confusion_matrix": null
+          },
+          "hipoxemia": {
+            "f1": 0.7322,
+            "precision": 0.5838,
+            "recall": 0.9818,
+            "support": 110,
+            "n_valid_samples": 1911,
+            "confusion_matrix": [
+              [
+                1724,
+                77
+              ],
+              [
+                2,
+                108
+              ]
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "epoch": 18,
+    "train": {
+      "loss": 0.875402801594364,
+      "mse": 0.7163843132628224,
+      "pearson": 0.4887180359543118,
+      "smooth": 0.026183683777627198
+    },
+    "val": {
+      "loss": 1.6243042751336199,
+      "mse": 1.287376457178443,
+      "pearson": 1.0354627535432952,
+      "pathology_bce": 0.12217618329533295,
+      "rmse_mean": 1.134626030921936,
+      "prd_mean": 113.44744110107422,
+      "corr_mean": -0.06662891060113907,
+      "prd_per_lead": [
+        113.44744110107422
+      ],
+      "corr_per_lead": [
+        -0.06662891060113907
+      ],
+      "pathology_metrics": {
+        "macro_f1": 0.3623,
+        "n_classes_evaluated": 3,
+        "per_class": {
+          "bradicardia": {
+            "f1": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "support": 0,
+            "n_valid_samples": 1912,
+            "confusion_matrix": [
+              [
+                1912,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ]
+          },
+          "taquicardia": {
+            "f1": 0.4034,
+            "precision": 0.7231,
+            "recall": 0.2798,
+            "support": 168,
+            "n_valid_samples": 1912,
+            "confusion_matrix": [
+              [
+                1726,
+                18
+              ],
+              [
+                121,
+                47
+              ]
+            ]
+          },
+          "arritmia": {
+            "f1": null,
+            "precision": null,
+            "recall": null,
+            "support": 0,
+            "n_valid_samples": 0,
+            "confusion_matrix": null
+          },
+          "hipoxemia": {
+            "f1": 0.6835,
+            "precision": 0.5243,
+            "recall": 0.9818,
+            "support": 110,
+            "n_valid_samples": 1911,
+            "confusion_matrix": [
+              [
+                1703,
+                98
+              ],
+              [
+                2,
+                108
+              ]
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "epoch": 19,
+    "train": {
+      "loss": 0.8572244592901165,
+      "mse": 0.7027465172115451,
+      "pearson": 0.47508535256002293,
+      "smooth": 0.02874683089440005
+    },
+    "val": {
+      "loss": 1.5345946011682934,
+      "mse": 1.2091037897884098,
+      "pearson": 1.0008130512476965,
+      "pathology_bce": 0.11897833318163147,
+      "rmse_mean": 1.0995924472808838,
+      "prd_mean": 109.94454956054688,
+      "corr_mean": -0.022624501958489418,
+      "prd_per_lead": [
+        109.94454956054688
+      ],
+      "corr_per_lead": [
+        -0.022624501958489418
+      ],
+      "pathology_metrics": {
+        "macro_f1": 0.3721,
+        "n_classes_evaluated": 3,
+        "per_class": {
+          "bradicardia": {
+            "f1": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "support": 0,
+            "n_valid_samples": 1912,
+            "confusion_matrix": [
+              [
+                1912,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ]
+          },
+          "taquicardia": {
+            "f1": 0.4435,
+            "precision": 0.7465,
+            "recall": 0.3155,
+            "support": 168,
+            "n_valid_samples": 1912,
+            "confusion_matrix": [
+              [
+                1726,
+                18
+              ],
+              [
+                115,
+                53
+              ]
+            ]
+          },
+          "arritmia": {
+            "f1": null,
+            "precision": null,
+            "recall": null,
+            "support": 0,
+            "n_valid_samples": 0,
+            "confusion_matrix": null
+          },
+          "hipoxemia": {
+            "f1": 0.6729,
+            "precision": 0.5118,
+            "recall": 0.9818,
+            "support": 110,
+            "n_valid_samples": 1911,
+            "confusion_matrix": [
+              [
+                1698,
+                103
+              ],
+              [
+                2,
+                108
+              ]
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "epoch": 20,
+    "train": {
+      "loss": 0.8592531364056079,
+      "mse": 0.7040943792674332,
+      "pearson": 0.47741041413189256,
+      "smooth": 0.028655504541985104
+    },
+    "val": {
+      "loss": 1.5545444598257792,
+      "mse": 1.2140731093275,
+      "pearson": 1.021120651496504,
+      "pathology_bce": 0.16337703162120853,
+      "rmse_mean": 1.101849913597107,
+      "prd_mean": 110.17027282714844,
+      "corr_mean": -0.04315849766135216,
+      "prd_per_lead": [
+        110.17027282714844
+      ],
+      "corr_per_lead": [
+        -0.04315849766135216
+      ],
+      "pathology_metrics": {
+        "macro_f1": 0.3242,
+        "n_classes_evaluated": 3,
+        "per_class": {
+          "bradicardia": {
+            "f1": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "support": 0,
+            "n_valid_samples": 1912,
+            "confusion_matrix": [
+              [
+                1912,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ]
+          },
+          "taquicardia": {
+            "f1": 0.3945,
+            "precision": 0.86,
+            "recall": 0.256,
+            "support": 168,
+            "n_valid_samples": 1912,
+            "confusion_matrix": [
+              [
+                1737,
+                7
+              ],
+              [
+                125,
+                43
+              ]
+            ]
+          },
+          "arritmia": {
+            "f1": null,
+            "precision": null,
+            "recall": null,
+            "support": 0,
+            "n_valid_samples": 0,
+            "confusion_matrix": null
+          },
+          "hipoxemia": {
+            "f1": 0.5782,
+            "precision": 0.4082,
+            "recall": 0.9909,
+            "support": 110,
+            "n_valid_samples": 1911,
+            "confusion_matrix": [
+              [
+                1643,
+                158
+              ],
+              [
+                1,
+                109
+              ]
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "epoch": 21,
+    "train": {
+      "loss": 0.9438772554011857,
+      "mse": 0.7626118786608769,
+      "pearson": 0.5410993724077704,
+      "smooth": 0.02254873133939485
+    },
+    "val": {
+      "loss": 1.5950530443231432,
+      "mse": 1.2440980603006595,
+      "pearson": 1.0702027661032258,
+      "pathology_bce": 0.1422885393456066,
+      "rmse_mean": 1.1153913736343384,
+      "prd_mean": 111.52422332763672,
+      "corr_mean": -0.08979003131389618,
+      "prd_per_lead": [
+        111.52422332763672
+      ],
+      "corr_per_lead": [
+        -0.08979003131389618
+      ],
+      "pathology_metrics": {
+        "macro_f1": 0.3305,
+        "n_classes_evaluated": 3,
+        "per_class": {
+          "bradicardia": {
+            "f1": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "support": 0,
+            "n_valid_samples": 1912,
+            "confusion_matrix": [
+              [
+                1912,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ]
+          },
+          "taquicardia": {
+            "f1": 0.2857,
+            "precision": 0.7143,
+            "recall": 0.1786,
+            "support": 168,
+            "n_valid_samples": 1912,
+            "confusion_matrix": [
+              [
+                1732,
+                12
+              ],
+              [
+                138,
+                30
+              ]
+            ]
+          },
+          "arritmia": {
+            "f1": null,
+            "precision": null,
+            "recall": null,
+            "support": 0,
+            "n_valid_samples": 0,
+            "confusion_matrix": null
+          },
+          "hipoxemia": {
+            "f1": 0.7059,
+            "precision": 0.551,
+            "recall": 0.9818,
+            "support": 110,
+            "n_valid_samples": 1911,
+            "confusion_matrix": [
+              [
+                1713,
+                88
+              ],
+              [
+                2,
+                108
+              ]
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "epoch": 22,
+    "train": {
+      "loss": 0.8523835354159456,
+      "mse": 0.6989354923512979,
+      "pearson": 0.4718046862405159,
+      "smooth": 0.029171548717967413
+    },
+    "val": {
+      "loss": 1.5283887496054422,
+      "mse": 1.1847749260180167,
+      "pearson": 1.000121404436343,
+      "pathology_bce": 0.21170117600936522,
+      "rmse_mean": 1.0884736776351929,
+      "prd_mean": 108.83282470703125,
+      "corr_mean": -0.006298310589045286,
+      "prd_per_lead": [
+        108.83282470703125
+      ],
+      "corr_per_lead": [
+        -0.006298310589045286
+      ],
+      "pathology_metrics": {
+        "macro_f1": 0.2737,
+        "n_classes_evaluated": 3,
+        "per_class": {
+          "bradicardia": {
+            "f1": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "support": 0,
+            "n_valid_samples": 1912,
+            "confusion_matrix": [
+              [
+                1912,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ]
+          },
+          "taquicardia": {
+            "f1": 0.0889,
+            "precision": 0.6667,
+            "recall": 0.0476,
+            "support": 168,
+            "n_valid_samples": 1912,
+            "confusion_matrix": [
+              [
+                1740,
+                4
+              ],
+              [
+                160,
+                8
+              ]
+            ]
+          },
+          "arritmia": {
+            "f1": null,
+            "precision": null,
+            "recall": null,
+            "support": 0,
+            "n_valid_samples": 0,
+            "confusion_matrix": null
+          },
+          "hipoxemia": {
+            "f1": 0.7322,
+            "precision": 0.5838,
+            "recall": 0.9818,
+            "support": 110,
+            "n_valid_samples": 1911,
+            "confusion_matrix": [
+              [
+                1724,
+                77
+              ],
+              [
+                2,
+                108
+              ]
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "epoch": 23,
+    "train": {
+      "loss": 0.8342946031269834,
+      "mse": 0.6854601272146739,
+      "pearson": 0.45840344335909833,
+      "smooth": 0.03195237081544668
+    },
+    "val": {
+      "loss": 1.6178314875359316,
+      "mse": 1.271044532125465,
+      "pearson": 1.0323814442965775,
+      "pathology_bce": 0.17855148460381376,
+      "rmse_mean": 1.1274058818817139,
+      "prd_mean": 112.72553253173828,
+      "corr_mean": -0.03971067816019058,
+      "prd_per_lead": [
+        112.72553253173828
+      ],
+      "corr_per_lead": [
+        -0.03971067816019058
+      ],
+      "pathology_metrics": {
+        "macro_f1": 0.2758,
+        "n_classes_evaluated": 3,
+        "per_class": {
+          "bradicardia": {
+            "f1": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "support": 0,
+            "n_valid_samples": 1912,
+            "confusion_matrix": [
+              [
+                1912,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ]
+          },
+          "taquicardia": {
+            "f1": 0.1099,
+            "precision": 0.7143,
+            "recall": 0.0595,
+            "support": 168,
+            "n_valid_samples": 1912,
+            "confusion_matrix": [
+              [
+                1740,
+                4
+              ],
+              [
+                158,
+                10
+              ]
+            ]
+          },
+          "arritmia": {
+            "f1": null,
+            "precision": null,
+            "recall": null,
+            "support": 0,
+            "n_valid_samples": 0,
+            "confusion_matrix": null
+          },
+          "hipoxemia": {
+            "f1": 0.7176,
+            "precision": 0.5654,
+            "recall": 0.9818,
+            "support": 110,
+            "n_valid_samples": 1911,
+            "confusion_matrix": [
+              [
+                1718,
+                83
+              ],
+              [
+                2,
+                108
+              ]
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "epoch": 24,
+    "train": {
+      "loss": 0.823935889937278,
+      "mse": 0.6775294201754238,
+      "pearson": 0.45147056874149294,
+      "smooth": 0.032339513737419105
+    },
+    "val": {
+      "loss": 1.5746500621779693,
+      "mse": 1.2459715026193083,
+      "pearson": 0.9954734277525706,
+      "pathology_bce": 0.14344025846692748,
+      "rmse_mean": 1.116230845451355,
+      "prd_mean": 111.60816192626953,
+      "corr_mean": -0.03723394498229027,
+      "prd_per_lead": [
+        111.60816192626953
+      ],
+      "corr_per_lead": [
+        -0.03723394498229027
+      ],
+      "pathology_metrics": {
+        "macro_f1": 0.3975,
+        "n_classes_evaluated": 3,
+        "per_class": {
+          "bradicardia": {
+            "f1": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "support": 0,
+            "n_valid_samples": 1912,
+            "confusion_matrix": [
+              [
+                1912,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ]
+          },
+          "taquicardia": {
+            "f1": 0.6733,
+            "precision": 0.7652,
+            "recall": 0.6012,
+            "support": 168,
+            "n_valid_samples": 1912,
+            "confusion_matrix": [
+              [
+                1713,
+                31
+              ],
+              [
+                67,
+                101
+              ]
+            ]
+          },
+          "arritmia": {
+            "f1": null,
+            "precision": null,
+            "recall": null,
+            "support": 0,
+            "n_valid_samples": 0,
+            "confusion_matrix": null
+          },
+          "hipoxemia": {
+            "f1": 0.5192,
+            "precision": 0.3529,
+            "recall": 0.9818,
+            "support": 110,
+            "n_valid_samples": 1911,
+            "confusion_matrix": [
+              [
+                1603,
+                198
+              ],
+              [
+                2,
+                108
+              ]
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "epoch": 10,
+    "train": {
+      "loss": 1.2858612616081007,
+      "mse": 0.9800140221470293,
+      "pearson": 0.8676137936386825,
+      "smooth": 0.002323501078331404
+    },
+    "val": {
+      "loss": 1.326468630814652,
+      "mse": 1.006441471965742,
+      "pearson": 0.9580183772362426,
+      "pathology_bce": 0.16215341743939093,
+      "rmse_mean": 1.0032155513763428,
+      "prd_mean": 100.30814361572266,
+      "corr_mean": 0.0332459956407547,
+      "prd_per_lead": [
+        100.30814361572266
+      ],
+      "corr_per_lead": [
+        0.0332459956407547
+      ],
+      "pathology_metrics": {
+        "macro_f1": 0.2209,
+        "n_classes_evaluated": 3,
+        "per_class": {
+          "bradicardia": {
+            "f1": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "support": 0,
+            "n_valid_samples": 1912,
+            "confusion_matrix": [
+              [
+                1912,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ]
+          },
+          "taquicardia": {
+            "f1": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "support": 168,
+            "n_valid_samples": 1912,
+            "confusion_matrix": [
+              [
+                1636,
+                108
+              ],
+              [
+                168,
+                0
+              ]
+            ]
+          },
+          "arritmia": {
+            "f1": null,
+            "precision": null,
+            "recall": null,
+            "support": 0,
+            "n_valid_samples": 0,
+            "confusion_matrix": null
+          },
+          "hipoxemia": {
+            "f1": 0.6627,
+            "precision": 0.9821,
+            "recall": 0.5,
+            "support": 110,
+            "n_valid_samples": 1911,
+            "confusion_matrix": [
+              [
+                1800,
+                1
+              ],
+              [
+                55,
+                55
+              ]
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "epoch": 11,
+    "train": {
+      "loss": 1.1927194821452163,
+      "mse": 0.9332282069337917,
+      "pearson": 0.7652517400027319,
+      "smooth": 0.003803895002184241
+    },
+    "val": {
+      "loss": 1.4714627954251596,
+      "mse": 1.1157628287830113,
+      "pearson": 1.077423171518238,
+      "pathology_bce": 0.15999727728718183,
+      "rmse_mean": 1.056296944618225,
+      "prd_mean": 105.6155776977539,
+      "corr_mean": -0.08509308099746704,
+      "prd_per_lead": [
+        105.6155776977539
+      ],
+      "corr_per_lead": [
+        -0.08509308099746704
+      ],
+      "pathology_metrics": {
+        "macro_f1": 0.2202,
+        "n_classes_evaluated": 3,
+        "per_class": {
+          "bradicardia": {
+            "f1": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "support": 0,
+            "n_valid_samples": 1912,
+            "confusion_matrix": [
+              [
+                1912,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ]
+          },
+          "taquicardia": {
+            "f1": 0.0118,
+            "precision": 1.0,
+            "recall": 0.006,
+            "support": 168,
+            "n_valid_samples": 1912,
+            "confusion_matrix": [
+              [
+                1744,
+                0
+              ],
+              [
+                167,
+                1
+              ]
+            ]
+          },
+          "arritmia": {
+            "f1": null,
+            "precision": null,
+            "recall": null,
+            "support": 0,
+            "n_valid_samples": 0,
+            "confusion_matrix": null
+          },
+          "hipoxemia": {
+            "f1": 0.6486,
+            "precision": 0.4843,
+            "recall": 0.9818,
+            "support": 110,
+            "n_valid_samples": 1911,
+            "confusion_matrix": [
+              [
+                1686,
+                115
+              ],
+              [
+                2,
+                108
+              ]
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "epoch": 12,
+    "train": {
+      "loss": 1.061214718027261,
+      "mse": 0.8489662325143925,
+      "pearson": 0.637941271108231,
+      "smooth": 0.010876692408502711
+    },
+    "val": {
+      "loss": 1.4583964028617826,
+      "mse": 1.1219750832314273,
+      "pearson": 1.0399352461723104,
+      "pathology_bce": 0.11861421700535833,
+      "rmse_mean": 1.0592331886291504,
+      "prd_mean": 105.90917205810547,
+      "corr_mean": -0.04009636491537094,
+      "prd_per_lead": [
+        105.90917205810547
+      ],
+      "corr_per_lead": [
+        -0.04009636491537094
+      ],
+      "pathology_metrics": {
+        "macro_f1": 0.3352,
+        "n_classes_evaluated": 3,
+        "per_class": {
+          "bradicardia": {
+            "f1": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "support": 0,
+            "n_valid_samples": 1912,
+            "confusion_matrix": [
+              [
+                1912,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ]
+          },
+          "taquicardia": {
+            "f1": 0.2555,
+            "precision": 0.3302,
+            "recall": 0.2083,
+            "support": 168,
+            "n_valid_samples": 1912,
+            "confusion_matrix": [
+              [
+                1673,
+                71
+              ],
+              [
+                133,
+                35
+              ]
+            ]
+          },
+          "arritmia": {
+            "f1": null,
+            "precision": null,
+            "recall": null,
+            "support": 0,
+            "n_valid_samples": 0,
+            "confusion_matrix": null
+          },
+          "hipoxemia": {
+            "f1": 0.75,
+            "precision": 0.6067,
+            "recall": 0.9818,
+            "support": 110,
+            "n_valid_samples": 1911,
+            "confusion_matrix": [
+              [
+                1731,
+                70
+              ],
+              [
+                2,
+                108
+              ]
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "epoch": 13,
+    "train": {
+      "loss": 1.0026113356838997,
+      "mse": 0.8079444895174158,
+      "pearson": 0.5858462115655328,
+      "smooth": 0.014833917247277811
+    },
+    "val": {
+      "loss": 1.542623197184447,
+      "mse": 1.2030846793282481,
+      "pearson": 1.056895922916205,
+      "pathology_bce": 0.10708418118701196,
+      "rmse_mean": 1.09685218334198,
+      "prd_mean": 109.6705551147461,
+      "corr_mean": -0.06556765735149384,
+      "prd_per_lead": [
+        109.6705551147461
+      ],
+      "corr_per_lead": [
+        -0.06556765735149384
+      ],
+      "pathology_metrics": {
+        "macro_f1": 0.3118,
+        "n_classes_evaluated": 3,
+        "per_class": {
+          "bradicardia": {
+            "f1": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "support": 0,
+            "n_valid_samples": 1912,
+            "confusion_matrix": [
+              [
+                1912,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ]
+          },
+          "taquicardia": {
+            "f1": 0.1613,
+            "precision": 0.8333,
+            "recall": 0.0893,
+            "support": 168,
+            "n_valid_samples": 1912,
+            "confusion_matrix": [
+              [
+                1741,
+                3
+              ],
+              [
+                153,
+                15
+              ]
+            ]
+          },
+          "arritmia": {
+            "f1": null,
+            "precision": null,
+            "recall": null,
+            "support": 0,
+            "n_valid_samples": 0,
+            "confusion_matrix": null
+          },
+          "hipoxemia": {
+            "f1": 0.7742,
+            "precision": 0.6391,
+            "recall": 0.9818,
+            "support": 110,
+            "n_valid_samples": 1911,
+            "confusion_matrix": [
+              [
+                1740,
+                61
+              ],
+              [
+                2,
+                108
+              ]
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "epoch": 14,
+    "train": {
+      "loss": 0.9624343265881931,
+      "mse": 0.7799618625463524,
+      "pearson": 0.5543296884958382,
+      "smooth": 0.017669406045368527
+    },
+    "val": {
+      "loss": 1.4171796069484375,
+      "mse": 1.107863948933749,
+      "pearson": 0.9627838109826443,
+      "pathology_bce": 0.097812731356738,
+      "rmse_mean": 1.0525511503219604,
+      "prd_mean": 105.24105072021484,
+      "corr_mean": 0.0463312529027462,
+      "prd_per_lead": [
+        105.24105072021484
+      ],
+      "corr_per_lead": [
+        0.0463312529027462
+      ],
+      "pathology_metrics": {
+        "macro_f1": 0.3793,
+        "n_classes_evaluated": 3,
+        "per_class": {
+          "bradicardia": {
+            "f1": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "support": 0,
+            "n_valid_samples": 1912,
+            "confusion_matrix": [
+              [
+                1912,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ]
+          },
+          "taquicardia": {
+            "f1": 0.3905,
+            "precision": 0.9762,
+            "recall": 0.244,
+            "support": 168,
+            "n_valid_samples": 1912,
+            "confusion_matrix": [
+              [
+                1743,
+                1
+              ],
+              [
+                127,
+                41
+              ]
+            ]
+          },
+          "arritmia": {
+            "f1": null,
+            "precision": null,
+            "recall": null,
+            "support": 0,
+            "n_valid_samples": 0,
+            "confusion_matrix": null
+          },
+          "hipoxemia": {
+            "f1": 0.7474,
+            "precision": 0.6034,
+            "recall": 0.9818,
+            "support": 110,
+            "n_valid_samples": 1911,
+            "confusion_matrix": [
+              [
+                1730,
+                71
+              ],
+              [
+                2,
+                108
+              ]
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "epoch": 15,
+    "train": {
+      "loss": 0.9444373604421115,
+      "mse": 0.766790055441668,
+      "pearson": 0.5401841199492255,
+      "smooth": 0.0194156014783501
+    },
+    "val": {
+      "loss": 1.5271919731315708,
+      "mse": 1.1883207913721954,
+      "pearson": 1.0458954363188484,
+      "pathology_bce": 0.12002641003711391,
+      "rmse_mean": 1.0901012420654297,
+      "prd_mean": 108.99555969238281,
+      "corr_mean": -0.05679523944854736,
+      "prd_per_lead": [
+        108.99555969238281
+      ],
+      "corr_per_lead": [
+        -0.05679523944854736
+      ],
+      "pathology_metrics": {
+        "macro_f1": 0.3369,
+        "n_classes_evaluated": 3,
+        "per_class": {
+          "bradicardia": {
+            "f1": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "support": 0,
+            "n_valid_samples": 1912,
+            "confusion_matrix": [
+              [
+                1912,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ]
+          },
+          "taquicardia": {
+            "f1": 0.2032,
+            "precision": 1.0,
+            "recall": 0.1131,
+            "support": 168,
+            "n_valid_samples": 1912,
+            "confusion_matrix": [
+              [
+                1744,
+                0
+              ],
+              [
+                149,
+                19
+              ]
+            ]
+          },
+          "arritmia": {
+            "f1": null,
+            "precision": null,
+            "recall": null,
+            "support": 0,
+            "n_valid_samples": 0,
+            "confusion_matrix": null
+          },
+          "hipoxemia": {
+            "f1": 0.8075,
+            "precision": 0.6903,
+            "recall": 0.9727,
+            "support": 110,
+            "n_valid_samples": 1911,
+            "confusion_matrix": [
+              [
+                1753,
+                48
+              ],
+              [
+                3,
+                107
+              ]
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "epoch": 16,
+    "train": {
+      "loss": 0.933881297548224,
+      "mse": 0.7594690717746357,
+      "pearson": 0.5334448463165278,
+      "smooth": 0.02032075466970021
+    },
+    "val": {
+      "loss": 1.4945494769507373,
+      "mse": 1.1669755221410776,
+      "pearson": 1.0019519857781702,
+      "pathology_bce": 0.12880728186778412,
+      "rmse_mean": 1.0802663564682007,
+      "prd_mean": 108.01219940185547,
+      "corr_mean": -0.020390387624502182,
+      "prd_per_lead": [
+        108.01219940185547
+      ],
+      "corr_per_lead": [
+        -0.020390387624502182
+      ],
+      "pathology_metrics": {
+        "macro_f1": 0.3003,
+        "n_classes_evaluated": 3,
+        "per_class": {
+          "bradicardia": {
+            "f1": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "support": 0,
+            "n_valid_samples": 1912,
+            "confusion_matrix": [
+              [
+                1912,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ]
+          },
+          "taquicardia": {
+            "f1": 0.1429,
+            "precision": 0.9286,
+            "recall": 0.0774,
+            "support": 168,
+            "n_valid_samples": 1912,
+            "confusion_matrix": [
+              [
+                1743,
+                1
+              ],
+              [
+                155,
+                13
+              ]
+            ]
+          },
+          "arritmia": {
+            "f1": null,
+            "precision": null,
+            "recall": null,
+            "support": 0,
+            "n_valid_samples": 0,
+            "confusion_matrix": null
+          },
+          "hipoxemia": {
+            "f1": 0.7579,
+            "precision": 0.6171,
+            "recall": 0.9818,
+            "support": 110,
+            "n_valid_samples": 1911,
+            "confusion_matrix": [
+              [
+                1734,
+                67
+              ],
+              [
+                2,
+                108
+              ]
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "epoch": 17,
+    "train": {
+      "loss": 0.919668962488835,
+      "mse": 0.7489374232037241,
+      "pearson": 0.5217645775850625,
+      "smooth": 0.0218406767622918
+    },
+    "val": {
+      "loss": 1.3752876141081296,
+      "mse": 1.077448556612725,
+      "pearson": 0.9496636420613054,
+      "pathology_bce": 0.060901718948691085,
+      "rmse_mean": 1.038002371788025,
+      "prd_mean": 103.78636169433594,
+      "corr_mean": 0.05631055310368538,
+      "prd_per_lead": [
+        103.78636169433594
+      ],
+      "corr_per_lead": [
+        0.05631055310368538
+      ],
+      "pathology_metrics": {
+        "macro_f1": 0.5073,
+        "n_classes_evaluated": 3,
+        "per_class": {
+          "bradicardia": {
+            "f1": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "support": 0,
+            "n_valid_samples": 1912,
+            "confusion_matrix": [
+              [
+                1912,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ]
+          },
+          "taquicardia": {
+            "f1": 0.6374,
+            "precision": 0.8286,
+            "recall": 0.5179,
+            "support": 168,
+            "n_valid_samples": 1912,
+            "confusion_matrix": [
+              [
+                1726,
+                18
+              ],
+              [
+                81,
+                87
+              ]
+            ]
+          },
+          "arritmia": {
+            "f1": null,
+            "precision": null,
+            "recall": null,
+            "support": 0,
+            "n_valid_samples": 0,
+            "confusion_matrix": null
+          },
+          "hipoxemia": {
+            "f1": 0.8844,
+            "precision": 0.9888,
+            "recall": 0.8,
+            "support": 110,
+            "n_valid_samples": 1911,
+            "confusion_matrix": [
+              [
+                1800,
+                1
+              ],
+              [
+                22,
+                88
+              ]
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "epoch": 18,
+    "train": {
+      "loss": 0.8863948766490239,
+      "mse": 0.724529762647142,
+      "pearson": 0.4975837429752465,
+      "smooth": 0.025155634923674848
+    },
+    "val": {
+      "loss": 1.5210003254303872,
+      "mse": 1.1962141067911891,
+      "pearson": 1.0344359216330938,
+      "pathology_bce": 0.06624739404736578,
+      "rmse_mean": 1.0937156677246094,
+      "prd_mean": 109.35694885253906,
+      "corr_mean": -0.04573383182287216,
+      "prd_per_lead": [
+        109.35694885253906
+      ],
+      "corr_per_lead": [
+        -0.04573383182287216
+      ],
+      "pathology_metrics": {
+        "macro_f1": 0.5056,
+        "n_classes_evaluated": 3,
+        "per_class": {
+          "bradicardia": {
+            "f1": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "support": 0,
+            "n_valid_samples": 1912,
+            "confusion_matrix": [
+              [
+                1912,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ]
+          },
+          "taquicardia": {
+            "f1": 0.7668,
+            "precision": 0.8276,
+            "recall": 0.7143,
+            "support": 168,
+            "n_valid_samples": 1912,
+            "confusion_matrix": [
+              [
+                1719,
+                25
+              ],
+              [
+                48,
+                120
+              ]
+            ]
+          },
+          "arritmia": {
+            "f1": null,
+            "precision": null,
+            "recall": null,
+            "support": 0,
+            "n_valid_samples": 0,
+            "confusion_matrix": null
+          },
+          "hipoxemia": {
+            "f1": 0.75,
+            "precision": 0.6067,
+            "recall": 0.9818,
+            "support": 110,
+            "n_valid_samples": 1911,
+            "confusion_matrix": [
+              [
+                1731,
+                70
+              ],
+              [
+                2,
+                108
+              ]
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "epoch": 19,
+    "train": {
+      "loss": 0.8802193622985921,
+      "mse": 0.7203398236060131,
+      "pearson": 0.49372269479910313,
+      "smooth": 0.02574492114115903
+    },
+    "val": {
+      "loss": 1.4493162163131905,
+      "mse": 1.1354116051765666,
+      "pearson": 0.963258165195896,
+      "pathology_bce": 0.11774804699770468,
+      "rmse_mean": 1.0655571222305298,
+      "prd_mean": 106.5414810180664,
+      "corr_mean": 0.01861836016178131,
+      "prd_per_lead": [
+        106.5414810180664
+      ],
+      "corr_per_lead": [
+        0.01861836016178131
+      ],
+      "pathology_metrics": {
+        "macro_f1": 0.3374,
+        "n_classes_evaluated": 3,
+        "per_class": {
+          "bradicardia": {
+            "f1": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "support": 0,
+            "n_valid_samples": 1912,
+            "confusion_matrix": [
+              [
+                1912,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ]
+          },
+          "taquicardia": {
+            "f1": 0.2353,
+            "precision": 0.6667,
+            "recall": 0.1429,
+            "support": 168,
+            "n_valid_samples": 1912,
+            "confusion_matrix": [
+              [
+                1732,
+                12
+              ],
+              [
+                144,
+                24
+              ]
+            ]
+          },
+          "arritmia": {
+            "f1": null,
+            "precision": null,
+            "recall": null,
+            "support": 0,
+            "n_valid_samples": 0,
+            "confusion_matrix": null
+          },
+          "hipoxemia": {
+            "f1": 0.777,
+            "precision": 0.6429,
+            "recall": 0.9818,
+            "support": 110,
+            "n_valid_samples": 1911,
+            "confusion_matrix": [
+              [
+                1741,
+                60
+              ],
+              [
+                2,
+                108
+              ]
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "epoch": 20,
+    "train": {
+      "loss": 0.8901736862379027,
+      "mse": 0.7271549268303112,
+      "pearson": 0.5012885471212759,
+      "smooth": 0.025168894189580935
+    },
+    "val": {
+      "loss": 1.5046746765719299,
+      "mse": 1.1814334597048899,
+      "pearson": 1.0374798991690122,
+      "pathology_bce": 0.05372407056355194,
+      "rmse_mean": 1.0869375467300415,
+      "prd_mean": 108.67923736572266,
+      "corr_mean": -0.0381476990878582,
+      "prd_per_lead": [
+        108.67923736572266
+      ],
+      "corr_per_lead": [
+        -0.0381476990878582
+      ],
+      "pathology_metrics": {
+        "macro_f1": 0.5507,
+        "n_classes_evaluated": 3,
+        "per_class": {
+          "bradicardia": {
+            "f1": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "support": 0,
+            "n_valid_samples": 1912,
+            "confusion_matrix": [
+              [
+                1912,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ]
+          },
+          "taquicardia": {
+            "f1": 0.7688,
+            "precision": 0.8092,
+            "recall": 0.7321,
+            "support": 168,
+            "n_valid_samples": 1912,
+            "confusion_matrix": [
+              [
+                1715,
+                29
+              ],
+              [
+                45,
+                123
+              ]
+            ]
+          },
+          "arritmia": {
+            "f1": null,
+            "precision": null,
+            "recall": null,
+            "support": 0,
+            "n_valid_samples": 0,
+            "confusion_matrix": null
+          },
+          "hipoxemia": {
+            "f1": 0.8833,
+            "precision": 0.8154,
+            "recall": 0.9636,
+            "support": 110,
+            "n_valid_samples": 1911,
+            "confusion_matrix": [
+              [
+                1777,
+                24
+              ],
+              [
+                4,
+                106
+              ]
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "epoch": 21,
+    "train": {
+      "loss": 0.9816560540183762,
+      "mse": 0.783857556483403,
+      "pearson": 0.5759851457018567,
+      "smooth": 0.021425539100960917
+    },
+    "val": {
+      "loss": 1.3224727354289099,
+      "mse": 1.001472942250543,
+      "pearson": 0.9425793791415801,
+      "pathology_bce": 0.18857316663449777,
+      "rmse_mean": 1.000736117362976,
+      "prd_mean": 100.06022644042969,
+      "corr_mean": 0.049903448671102524,
+      "prd_per_lead": [
+        100.06022644042969
+      ],
+      "corr_per_lead": [
+        0.049903448671102524
+      ],
+      "pathology_metrics": {
+        "macro_f1": 0.0039,
+        "n_classes_evaluated": 3,
+        "per_class": {
+          "bradicardia": {
+            "f1": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "support": 0,
+            "n_valid_samples": 1912,
+            "confusion_matrix": [
+              [
+                1912,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ]
+          },
+          "taquicardia": {
+            "f1": 0.0118,
+            "precision": 0.5,
+            "recall": 0.006,
+            "support": 168,
+            "n_valid_samples": 1912,
+            "confusion_matrix": [
+              [
+                1743,
+                1
+              ],
+              [
+                167,
+                1
+              ]
+            ]
+          },
+          "arritmia": {
+            "f1": null,
+            "precision": null,
+            "recall": null,
+            "support": 0,
+            "n_valid_samples": 0,
+            "confusion_matrix": null
+          },
+          "hipoxemia": {
+            "f1": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "support": 110,
+            "n_valid_samples": 1911,
+            "confusion_matrix": [
+              [
+                1801,
+                0
+              ],
+              [
+                110,
+                0
+              ]
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "epoch": 22,
+    "train": {
+      "loss": 1.3032601542497224,
+      "mse": 0.9741533600358506,
+      "pearson": 0.861287451023171,
+      "smooth": 0.00726054909769818
+    },
+    "val": {
+      "loss": 1.378516049564633,
+      "mse": 1.0352909355482796,
+      "pearson": 1.0021292619625395,
+      "pathology_bce": 0.20950286442639937,
+      "rmse_mean": 1.017492413520813,
+      "prd_mean": 101.73564147949219,
+      "corr_mean": 0.00413966178894043,
+      "prd_per_lead": [
+        101.73564147949219
+      ],
+      "corr_per_lead": [
+        0.00413966178894043
+      ],
+      "pathology_metrics": {
+        "macro_f1": 0.0069,
+        "n_classes_evaluated": 3,
+        "per_class": {
+          "bradicardia": {
+            "f1": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "support": 0,
+            "n_valid_samples": 1912,
+            "confusion_matrix": [
+              [
+                1912,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ]
+          },
+          "taquicardia": {
+            "f1": 0.0208,
+            "precision": 0.0833,
+            "recall": 0.0119,
+            "support": 168,
+            "n_valid_samples": 1912,
+            "confusion_matrix": [
+              [
+                1722,
+                22
+              ],
+              [
+                166,
+                2
+              ]
+            ]
+          },
+          "arritmia": {
+            "f1": null,
+            "precision": null,
+            "recall": null,
+            "support": 0,
+            "n_valid_samples": 0,
+            "confusion_matrix": null
+          },
+          "hipoxemia": {
+            "f1": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "support": 110,
+            "n_valid_samples": 1911,
+            "confusion_matrix": [
+              [
+                1801,
+                0
+              ],
+              [
+                110,
+                0
+              ]
+            ]
+          }
+        }
+      }
+    }
+  }
+]
