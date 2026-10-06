@@ -218,6 +218,7 @@ This project's physics-informed, graph-structured approach is inspired in part b
 ## Authors
 
 - **Jesus Eduardo Escobar Meza**  - Development
+- **Nezih Nieto Gutiérrez** - Original Idea
 
 ---
 
