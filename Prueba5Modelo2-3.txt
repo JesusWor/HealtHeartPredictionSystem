@@ -1,0 +1,86 @@
+[BIDMC test ] 8 registros validos (0 descartados) -> 1912 ventanas (T=500, stride=250)
+Parámetros: 182,125
+/tmp/ipykernel_23487/1838971314.py:57: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = torch.cuda.amp.GradScaler() if device == "cuda" else None
+/tmp/ipykernel_23487/1838971314.py:78: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate
+  scheduler.step()
+Retomando desde epoch 10 | mejor val_loss hasta ahora: 1.2877
+Entrenamiento:  11%|█▏        | 9/80 [00:00<?, ?epoch/s]/tmp/ipykernel_23487/2991185055.py:18: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast():
+Entrenamiento:  12%|█▎        | 10/80 [07:33<8:48:43, 453.20s/epoch, train_loss=1.1154, val_loss=1.3427, corr=0.100, best=1.2877]Epoch 010 | Train Loss=1.1154 MSE=0.8813 Pearson=0.6754 | Val Loss=1.3427 RMSE=1.0255 Corr=0.0997 PRD=102.53% | Patho F1=0.245
+/tmp/ipykernel_23487/2991185055.py:18: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast():
+Entrenamiento:  14%|█▍        | 11/80 [14:53<8:32:16, 445.46s/epoch, train_loss=1.0186, val_loss=1.4116, corr=0.082, best=1.2877]Epoch 011 | Train Loss=1.0186 MSE=0.8195 Pearson=0.5951 | Val Loss=1.4116 RMSE=1.0539 Corr=0.0825 PRD=105.38% | Patho F1=0.420
+/tmp/ipykernel_23487/2991185055.py:18: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast():
+Entrenamiento:  15%|█▌        | 12/80 [22:29<8:30:18, 450.27s/epoch, train_loss=1.2850, val_loss=1.3258, corr=0.010, best=1.2877]Epoch 012 | Train Loss=1.2850 MSE=0.9679 Pearson=0.8485 | Val Loss=1.3258 RMSE=1.0012 Corr=0.0105 PRD=100.10% | Patho F1=0.164
+/tmp/ipykernel_23487/2991185055.py:18: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast():
+Entrenamiento:  16%|█▋        | 13/80 [30:14<8:29:17, 456.08s/epoch, train_loss=1.2845, val_loss=1.4342, corr=0.007, best=1.2877]Epoch 013 | Train Loss=1.2845 MSE=0.9793 Pearson=0.8758 | Val Loss=1.4342 RMSE=1.0185 Corr=0.0073 PRD=101.84% | Patho F1=0.084
+/tmp/ipykernel_23487/2991185055.py:18: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast():
+Entrenamiento:  18%|█▊        | 14/80 [37:26<8:12:22, 447.62s/epoch, train_loss=1.2149, val_loss=1.3907, corr=0.010, best=1.2877]Epoch 014 | Train Loss=1.2149 MSE=0.9458 Pearson=0.7936 | Val Loss=1.3907 RMSE=1.0314 Corr=0.0097 PRD=103.13% | Patho F1=0.194
+/tmp/ipykernel_23487/2991185055.py:18: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast():
+Entrenamiento:  19%|█▉        | 15/80 [44:00<7:45:04, 429.31s/epoch, train_loss=1.2532, val_loss=1.4420, corr=-0.073, best=1.2877]Epoch 015 | Train Loss=1.2532 MSE=0.9686 Pearson=0.8331 | Val Loss=1.4420 RMSE=1.0365 Corr=-0.0733 PRD=103.63% | Patho F1=0.113
+/tmp/ipykernel_23487/2991185055.py:18: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast():
+Entrenamiento:  20%|██        | 16/80 [50:33<7:25:05, 417.27s/epoch, train_loss=1.1592, val_loss=1.4129, corr=-0.036, best=1.2877]Epoch 016 | Train Loss=1.1592 MSE=0.9174 Pearson=0.7297 | Val Loss=1.4129 RMSE=1.0378 Corr=-0.0357 PRD=103.77% | Patho F1=0.219
+/tmp/ipykernel_23487/2991185055.py:18: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast():
+Entrenamiento:  21%|██▏       | 17/80 [57:08<7:10:43, 410.22s/epoch, train_loss=1.1012, val_loss=1.3930, corr=-0.016, best=1.2877]Epoch 017 | Train Loss=1.1012 MSE=0.8775 Pearson=0.6790 | Val Loss=1.3930 RMSE=1.0339 Corr=-0.0157 PRD=103.38% | Patho F1=0.314
+/tmp/ipykernel_23487/2991185055.py:18: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast():
+Entrenamiento:  22%|██▎       | 18/80 [1:03:50<7:01:22, 407.79s/epoch, train_loss=1.0435, val_loss=1.4636, corr=0.000, best=1.2877]Epoch 018 | Train Loss=1.0435 MSE=0.8377 Pearson=0.6263 | Val Loss=1.4636 RMSE=1.0409 Corr=0.0005 PRD=104.08% | Patho F1=0.135
+/tmp/ipykernel_23487/2991185055.py:18: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast():
+Entrenamiento:  24%|██▍       | 19/80 [1:12:48<7:35:19, 447.87s/epoch, train_loss=1.0079, val_loss=1.4748, corr=-0.023, best=1.2877]Epoch 019 | Train Loss=1.0079 MSE=0.8129 Pearson=0.5965 | Val Loss=1.4748 RMSE=1.0683 Corr=-0.0227 PRD=106.82% | Patho F1=0.375
+/tmp/ipykernel_23487/2991185055.py:18: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast():
+Entrenamiento:  25%|██▌       | 20/80 [1:21:44<7:54:49, 474.83s/epoch, train_loss=0.9636, val_loss=1.4268, corr=0.026, best=1.2877] Epoch 020 | Train Loss=0.9636 MSE=0.7814 Pearson=0.5594 | Val Loss=1.4268 RMSE=1.0481 Corr=0.0257 PRD=104.80% | Patho F1=0.324
+/tmp/ipykernel_23487/2991185055.py:18: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast():
+Entrenamiento:  26%|██▋       | 21/80 [1:30:43<8:06:13, 494.47s/epoch, train_loss=0.9410, val_loss=1.5095, corr=-0.054, best=1.2877]Epoch 021 | Train Loss=0.9410 MSE=0.7657 Pearson=0.5416 | Val Loss=1.5095 RMSE=1.0844 Corr=-0.0544 PRD=108.42% | Patho F1=0.405
+/tmp/ipykernel_23487/2991185055.py:18: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast():
+Entrenamiento:  28%|██▊       | 22/80 [1:39:37<8:09:27, 506.33s/epoch, train_loss=0.9106, val_loss=1.5347, corr=-0.076, best=1.2877]Epoch 022 | Train Loss=0.9106 MSE=0.7431 Pearson=0.5175 | Val Loss=1.5347 RMSE=1.0909 Corr=-0.0757 PRD=109.07% | Patho F1=0.380
+/tmp/ipykernel_23487/2991185055.py:18: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast():
+Entrenamiento:  29%|██▉       | 23/80 [1:48:33<8:09:29, 515.25s/epoch, train_loss=0.9037, val_loss=1.4947, corr=-0.014, best=1.2877]Epoch 023 | Train Loss=0.9037 MSE=0.7378 Pearson=0.5131 | Val Loss=1.4947 RMSE=1.0765 Corr=-0.0141 PRD=107.63% | Patho F1=0.245
+/tmp/ipykernel_23487/2991185055.py:18: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast():
+Entrenamiento:  29%|██▉       | 23/80 [1:57:29<7:58:23, 503.57s/epoch, train_loss=0.9997, val_loss=1.5692, corr=-0.057, best=1.2877]
+Epoch 024 | Train Loss=0.9997 MSE=0.8063 Pearson=0.5869 | Val Loss=1.5692 RMSE=1.0980 Corr=-0.0570 PRD=109.79% | Patho F1=0.155
+
+Early stopping en epoch 24 (sin mejora por 15 épocas)
+
+── Evaluación en test set ──
+                                                                       
+Test RMSE: 1.0441
+Test Corr: 0.0288
+Test PRD: 104.39%
+PRD lead II: 104.39%
+
+=== Clasificación de patologías (test) ===
+
+Patología            F1   Precision    Recall   Support
+-------------------------------------------------------
+bradicardia       0.000       0.000     0.000        14
+taquicardia       0.517       0.613     0.448       650
+arritmia          0.000       0.000     0.000         0
+hipoxemia         0.991       1.000     0.981       478
+-------------------------------------------------------
+F1 macro          0.503
+
+Matrices de confusión por patología ([[TN, FP], [FN, TP]]):
+  bradicardia    : [[1898, 0], [14, 0]]
+  taquicardia    : [[1078, 184], [359, 291]]
+  arritmia       : None
+  hipoxemia      : [[1434, 0], [9, 469]]
+
+============================================================
+COMPARACIÓN PATOLOGÍAS CON LA CORRIDA ANTERIOR
+============================================================
+F1 macro             0.5026      0.5026     +0.0000
+  F1 bradicardia : 0.0000 -> 0.0000  (+0.0000)
+  F1 taquicardia : 0.5173 -> 0.5173  (+0.0000)
