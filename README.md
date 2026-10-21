@@ -4,7 +4,7 @@ A cardiovascular monitoring research project that reconstructs 12-lead ECG signa
 
 Built on real ECG data from PhysioNet's MIT-BIH Arrhythmia Database and PTB Diagnostic ECG Database.
 
-> **Author:** Jesus Eduardo Escobar Meza — Tecnológico de Monterrey
+> **Author:** Jesus Eduardo Escobar Meza — Tecnológico de Monterrey 
 
 ---
 
